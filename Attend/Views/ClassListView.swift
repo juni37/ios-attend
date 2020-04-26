@@ -8,51 +8,55 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ClassListView: View {
     let colorList: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.orange, UIColor.purple]
+    var classes = testDataClasses
     
-    @State var looking: Bool = true
     var body: some View {
         NavigationView {
-            List{
-                ReminderView()
-                VStack {
-                    ClassSummaryView(title: "iOS Programming", time: "7:00 - 9:30", students: 1, color: self.colorList[4])
-                    NavigationLink(destination: ClassSummaryView(title: "iOS Programming", time: "7:00 - 9:30", students: 1, color: self.colorList[2])) {
-                        EmptyView().frame(width: 0, height: 0, alignment: .center)
+            VStack {
+                ReminderView(count: classes.count)
+                List {
+                    ForEach(classes) { oclass in
+                        VStack {
+                            ClassSummaryView(currentClass: oclass)
+                            NavigationLink(destination: ClassSummaryView(currentClass: oclass)) {
+                                EmptyView().frame(width: 0, height: 0, alignment: .center)
+                            }
+                        }
                     }
                 }
-                
             }
             .navigationBarTitle("수업")
+            .navigationBarItems(trailing: EditButton())
+
         }
+
     }
+    
 }
 
 struct ClassSummaryView: View {
-    @State var title : String
-    @State var time : String
-    @State var students : Int
-    @State var color: UIColor
+    @State var currentClass: Class
     
     var body: some View {
         HStack {
             VStack (alignment: .leading, spacing: 10) {
-                Text(time)
+                Text(currentClass.time)
                     .foregroundColor(Color.black.opacity(0.5))
                     .bold()
                     .font(.caption)
-                Text(title)
+                Text(currentClass.name)
                     .font(.title)
                     .bold()
             }.padding()
             Spacer()
-            Text("학생: \(students)명")
+            Text("학생: \(currentClass.students.count)명")
                 .font(.footnote)
                 .padding()
                 .offset(x: 0, y: 20)
         }
-        .background(Color.init(color).opacity(0.3))
+        .background(Color.init(currentClass.color).opacity(0.3))
         .cornerRadius(20)
         .onAppear{
             UITableView.appearance().separatorColor = .clear
@@ -62,6 +66,8 @@ struct ClassSummaryView: View {
 
 
 struct ReminderView: View {
+    @State var count : Int
+    
     var body: some View {
         HStack {
             VStack (alignment: .center, spacing: 10) {
@@ -70,21 +76,25 @@ struct ReminderView: View {
                     .frame(width: 30, height: 30, alignment: .center)
                     .foregroundColor(.green)
                 
-                Text("Today")
+                Text("오늘")
                     .foregroundColor(Color.black.opacity(0.5))
                     .bold()
             }.padding()
             Spacer()
-            Text("6")
+            Text("\(count)")
                 .bold()
                 .font(.system(size: 30))
                 .padding()
         }
+        .background(Color.black.opacity(0.03))
+        .cornerRadius(20)
+        .padding()
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ClassListView()
     }
 }

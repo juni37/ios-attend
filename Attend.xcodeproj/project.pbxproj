@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0BF3978FD797E54BE6D3E526 /* Pods_Attend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCD9892749BCCB2A4204EF0 /* Pods_Attend.framework */; };
+		AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B02455CAEA00E6E977 /* Class.swift */; };
 		ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
-		ADEAEA50245541E600A0CB4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ContentView.swift */; };
+		ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ClassListView.swift */; };
 		ADEAEA52245541E800A0CB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA51245541E800A0CB4B /* Assets.xcassets */; };
 		ADEAEA55245541E800A0CB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA54245541E800A0CB4B /* Preview Assets.xcassets */; };
 		ADEAEA58245541E800A0CB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA56245541E800A0CB4B /* LaunchScreen.storyboard */; };
@@ -21,11 +22,12 @@
 /* Begin PBXFileReference section */
 		2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attend.release.xcconfig"; path = "Target Support Files/Pods-Attend/Pods-Attend.release.xcconfig"; sourceTree = "<group>"; };
 		6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attend.debug.xcconfig"; path = "Target Support Files/Pods-Attend/Pods-Attend.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2B18B02455CAEA00E6E977 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADEAEA4F245541E600A0CB4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADEAEA4F245541E600A0CB4B /* ClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListView.swift; sourceTree = "<group>"; };
 		ADEAEA51245541E800A0CB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADEAEA54245541E800A0CB4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADEAEA57245541E800A0CB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +54,6 @@
 				6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */,
 				2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -62,6 +63,31 @@
 				DBCD9892749BCCB2A4204EF0 /* Pods_Attend.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD2B18AF2455CADE00E6E977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18B02455CAEA00E6E977 /* Class.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2B18B22455CB7500E6E977 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */,
+				ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD2B18B32455CB7B00E6E977 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAEA4F245541E600A0CB4B /* ClassListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ADEAEA3F245541E600A0CB4B = {
@@ -85,9 +111,9 @@
 		ADEAEA4A245541E600A0CB4B /* Attend */ = {
 			isa = PBXGroup;
 			children = (
-				ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */,
-				ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */,
-				ADEAEA4F245541E600A0CB4B /* ContentView.swift */,
+				AD2B18AF2455CADE00E6E977 /* Model */,
+				AD2B18B22455CB7500E6E977 /* App */,
+				AD2B18B32455CB7B00E6E977 /* Views */,
 				ADEAEA51245541E800A0CB4B /* Assets.xcassets */,
 				ADEAEA56245541E800A0CB4B /* LaunchScreen.storyboard */,
 				ADEAEA59245541E800A0CB4B /* Info.plist */,
@@ -225,7 +251,8 @@
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
-				ADEAEA50245541E600A0CB4B /* ContentView.swift in Sources */,
+				AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */,
+				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
