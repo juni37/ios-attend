@@ -15,7 +15,8 @@ struct ContentView: View {
         NavigationView {
             List{
                 ReminderView()
-                ClassSummaryView()
+                ClassSummaryView(title: "iOS Programming", time: "7:00 - 9:30", students: 1, color: UIColor.green)
+                ClassSummaryView(title: "수학", time: "1:40 - 10:00", students: 4, color: UIColor.green)
             }
             .navigationBarTitle("수업")
         }
@@ -23,25 +24,29 @@ struct ContentView: View {
 }
 
 struct ClassSummaryView: View {
+    @State var title : String
+    @State var time : String
+    @State var students : Int
+    @State var color: UIColor
+    
     var body: some View {
         HStack {
-            VStack (alignment: .center, spacing: 10) {
-                Text("수업: 7:00 - 9:00")
+            VStack (alignment: .leading, spacing: 10) {
+                Text(time)
                     .foregroundColor(Color.black.opacity(0.5))
                     .bold()
                     .font(.caption)
-                    .offset(x: -30, y: 0)
-                Text("AP Calculus")
+                Text(title)
                     .font(.title)
                 .bold()
             }.padding()
             Spacer()
-            Text("학생: 10명")
+            Text("학생: \(students)명")
                 .font(.footnote)
                 .padding()
             .offset(x: 0, y: 20)
         }
-            .background(Color.blue.opacity(0.3))
+        .background(Color.init(color).opacity(0.3))
         .cornerRadius(30)
         .onAppear{
             UITableView.appearance().separatorColor = .clear
