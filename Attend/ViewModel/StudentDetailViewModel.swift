@@ -17,17 +17,17 @@ class StudentDetailViewModel : ObservableObject, Identifiable {
     @Published var color: UIColor = UIColor.white
     
     private var cancellables = Set<AnyCancellable>()
-    init(classCellVM: ClassCellViewModel) {
-        self.classCellVM = classCellVM
+    init(studentCellVM: StudentCellViewModel) {
+        self.studentCellVM = studentCellVM
         
-        $classCellVM.map { classCellVM in
-            classCellVM.color
+        $studentCellVM.map { studentCellVM in
+            studentCellVM.color
         }
         .assign(to: \.color, on: self)
         .store(in: &cancellables)
         
-        $classCellVM.map { classCellVM in
-            classCellVM.id
+        $studentCellVM.map { studentCellVM in
+            studentCellVM.id
         }
         .assign(to: \.id, on: self)
         .store(in: &cancellables)

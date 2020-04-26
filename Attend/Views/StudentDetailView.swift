@@ -14,10 +14,10 @@ struct StudentDetailView: View {
     var body: some View {
         VStack {
             List {
-                ForEach(testDataStudents) { student in
+                ForEach(testDataClasses) { oclass in
                     VStack {
-                        ClassSummaryView(studentCellVM: StudentCellViewModel(student: student))
-                        NavigationLink(destination: StudentSummaryView(studentCellVM: StudentCellViewModel(student: student))) {
+                        ClassSummaryView(classCellVM: ClassCellViewModel(oclass: oclass))
+                        NavigationLink(destination: ClassSummaryView(classCellVM: ClassCellViewModel(oclass: oclass))) {
                             EmptyView().frame(width: 0, height: 0, alignment: .center)
                         }
                     }
@@ -25,13 +25,13 @@ struct StudentDetailView: View {
                 
             }
         }
-        .navigationBarTitle(classDetailViewModel.classCellVM.currentClass.name)
+        .navigationBarTitle(studentDetailViewModel.studentCellVM.student.name)
         
     }
 }
 
 struct StudentDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        StudentDetailView()
+        StudentDetailView(studentDetailViewModel: StudentDetailViewModel(studentCellVM: StudentCellViewModel(student: testDataStudents[1])))
     }
 }
