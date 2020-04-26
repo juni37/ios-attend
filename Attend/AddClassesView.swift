@@ -11,6 +11,7 @@ import SwiftUI
 struct AddClassesView: View {
     @State var classTitle: String = ""
     @State var timeLabel: String = ""
+    @Binding var showModal: Bool
 
     var body: some View {
         NavigationView {
@@ -23,7 +24,7 @@ struct AddClassesView: View {
                 Text("시간")
                 TextField("7:00 - 9:00", text: $timeLabel)
                 Button(action: {
-                    //backend
+                    self.showModal.toggle()
                 }) {
                     Text("ENTER")
                 }
@@ -64,6 +65,6 @@ struct AddClassesView: View {
 
 struct AddClassesView_Previews: PreviewProvider {
     static var previews: some View {
-        AddClassesView()
+        AddClassesView(showModal: .constant(true))
     }
 }

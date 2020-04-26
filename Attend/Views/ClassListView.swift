@@ -10,9 +10,11 @@ import SwiftUI
 
 struct ClassListView: View {
     @ObservedObject var classListViewModel = ClassListViewModel()
-    
+    @State var showModal: Bool = false
+
     let colorList: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.orange, UIColor.purple]
     var classes = testDataClasses
+    
     
     var body: some View {
         NavigationView {
@@ -31,73 +33,82 @@ struct ClassListView: View {
                 }
             }
             .navigationBarTitle("수업")
-            .navigationBarItems(trailing: EditButton())
+            .navigationBarItems(trailing:
+                Button(action: {
+                    self.showModal.toggle()}){
+                        Image(systemName: "plus.circle.fill")
+                            .imageScale(.large)
+                }
+                .sheet(isPresented: $showModal){
+                    AddClassesView(showModal: self.$showModal)
+            })
             
         }
         
     }
     
-}
-
-struct ClassSummaryView: View {
-    @ObservedObject var classCellVM: ClassCellViewModel
-    
-    var body: some View {
-        HStack {
-            VStack (alignment: .leading, spacing: 10) {
-                Text(classCellVM.currentClass.time)
-                    .foregroundColor(Color.black.opacity(0.5))
-                    .bold()
-                    .font(.caption)
-                Text(classCellVM.currentClass.name)
-                    .font(.title)
-                    .bold()
-            }.padding()
-            Spacer()
-            Text("학생: \(classCellVM.currentClass.students.count)명")
-                .font(.footnote)
-                .padding()
-                .offset(x: 0, y: 20)
-        }
-        .background(Color.init(classCellVM.currentClass.color).opacity(0.3))
-        .cornerRadius(20)
-        .onAppear{
-            UITableView.appearance().separatorColor = .clear
-        }
-    }
-}
-
-
-struct ReminderView: View {
-    @State var count : Int
-    
-    var body: some View {
-        HStack {
-            VStack (alignment: .center, spacing: 10) {
-                Image(systemName: "calendar.circle.fill")
-                    .resizable()
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .foregroundColor(.green)
-                
-                Text("오늘")
-                    .foregroundColor(Color.black.opacity(0.5))
-                    .bold()
-            }.padding()
-            Spacer()
-            Text("\(count)")
-                .bold()
-                .font(.system(size: 30))
-                .padding()
-        }
-        .background(Color.black.opacity(0.03))
-        .cornerRadius(20)
-        .padding()
+    struct ClassSummaryView: View {
+        @ObservedObject var classCellVM: ClassCellViewModel
         
+        var body: some View {
+            HStack {
+                VStack (alignment: .leading, spacing: 10) {
+                    Text(classCellVM.currentClass.time)
+                        .foregroundColor(Color.black.opacity(0.5))
+                        .bold()
+                        .font(.caption)
+                    Text(classCellVM.currentClass.name)
+                        .font(.title)
+                        .bold()
+                }.padding()
+                Spacer()
+                Text("학생: \(classCellVM.currentClass.students.count)명")
+                    .font(.footnote)
+                    .padding()
+                    .offset(x: 0, y: 20)
+            }
+            .background(Color.init(classCellVM.currentClass.color).opacity(0.3))
+            .cornerRadius(20)
+            .onAppear{
+                UITableView.appearance().separatorColor = .clear
+            }
+        }
     }
-}
+    
+    
+    struct ReminderView: View {
+        @State var count : Int
+        
+        var body: some View {
+            HStack {
+                VStack (alignment: .center, spacing: 10) {
+                    Image(systemName: "calendar.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .foregroundColor(.green)
+                    
+                    Text("오늘")
+                        .foregroundColor(Color.black.opacity(0.5))
+                        .bold()
+                }.padding()
+                Spacer()
+                Text("\(count)")
+                    .bold()
+                    .font(.system(size: 30))
+                    .padding()
+            }
+            .background(Color.black.opacity(0.03))
+            .cornerRadius(20)
+            .padding()
+            
+        }
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        @State var showModal: Bool = false
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ClassListView()
+        static var previews: some View {
+            ClassListView(showModal: false)
+        }
     }
 }
