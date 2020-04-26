@@ -9,14 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    let colorList: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.orange, UIColor.purple]
     
-    
+    @State var looking: Bool = true
     var body: some View {
         NavigationView {
             List{
                 ReminderView()
-                ClassSummaryView(title: "iOS Programming", time: "7:00 - 9:30", students: 1, color: UIColor.green)
-                ClassSummaryView(title: "수학", time: "1:40 - 10:00", students: 4, color: UIColor.green)
+                VStack {
+                    ClassSummaryView(title: "iOS Programming", time: "7:00 - 9:30", students: 1, color: self.colorList[4])
+                    NavigationLink(destination: ClassSummaryView(title: "iOS Programming", time: "7:00 - 9:30", students: 1, color: self.colorList[2])) {
+                        EmptyView().frame(width: 0, height: 0, alignment: .center)
+                    }
+                }
+                
             }
             .navigationBarTitle("수업")
         }
@@ -38,16 +44,16 @@ struct ClassSummaryView: View {
                     .font(.caption)
                 Text(title)
                     .font(.title)
-                .bold()
+                    .bold()
             }.padding()
             Spacer()
             Text("학생: \(students)명")
                 .font(.footnote)
                 .padding()
-            .offset(x: 0, y: 20)
+                .offset(x: 0, y: 20)
         }
         .background(Color.init(color).opacity(0.3))
-        .cornerRadius(30)
+        .cornerRadius(20)
         .onAppear{
             UITableView.appearance().separatorColor = .clear
         }
@@ -63,16 +69,16 @@ struct ReminderView: View {
                     .resizable()
                     .frame(width: 30, height: 30, alignment: .center)
                     .foregroundColor(.green)
-
+                
                 Text("Today")
                     .foregroundColor(Color.black.opacity(0.5))
-                .bold()
+                    .bold()
             }.padding()
             Spacer()
             Text("6")
                 .bold()
                 .font(.system(size: 30))
-            .padding()
+                .padding()
         }
     }
 }
