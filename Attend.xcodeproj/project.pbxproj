@@ -116,6 +116,7 @@
 				AD2B18BB2455EA4200E6E977 /* ClassSummaryView.swift */,
 				AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */,
 				AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */,
+				ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 				ADEAEA59245541E800A0CB4B /* Info.plist */,
 				ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */,
 				ADEAEA53245541E800A0CB4B /* Preview Content */,
-				ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */,
 			);
 			path = Attend;
 			sourceTree = "<group>";
