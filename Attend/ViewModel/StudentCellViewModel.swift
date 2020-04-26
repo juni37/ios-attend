@@ -1,5 +1,5 @@
 //
-//  StudentCellVM.swift
+//  StudentCellViewModel.swift
 //  Attend
 //
 //  Created by David Yoon on 4/27/20.
