@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ClassListView: View {
+    @ObservedObject var classListViewModel = ClassListViewModel()
+    
     let colorList: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.orange, UIColor.purple]
     var classes = testDataClasses
     
@@ -17,46 +19,47 @@ struct ClassListView: View {
             VStack {
                 ReminderView(count: classes.count)
                 List {
-                    ForEach(classes) { oclass in
+                    ForEach(classListViewModel.classCellViewModels) { classCellVM in
                         VStack {
-                            ClassSummaryView(currentClass: oclass)
-                            NavigationLink(destination: ClassSummaryView(currentClass: oclass)) {
+                            ClassSummaryView(classCellVM: classCellVM)
+                            NavigationLink(destination: ClassSummaryView(classCellVM: classCellVM)) {
                                 EmptyView().frame(width: 0, height: 0, alignment: .center)
                             }
                         }
                     }
+                    
                 }
             }
             .navigationBarTitle("수업")
             .navigationBarItems(trailing: EditButton())
-
+            
         }
-
+        
     }
     
 }
 
 struct ClassSummaryView: View {
-    @State var currentClass: Class
+    @ObservedObject var classCellVM: ClassCellViewModel
     
     var body: some View {
         HStack {
             VStack (alignment: .leading, spacing: 10) {
-                Text(currentClass.time)
+                Text(classCellVM.currentClass.time)
                     .foregroundColor(Color.black.opacity(0.5))
                     .bold()
                     .font(.caption)
-                Text(currentClass.name)
+                Text(classCellVM.currentClass.name)
                     .font(.title)
                     .bold()
             }.padding()
             Spacer()
-            Text("학생: \(currentClass.students.count)명")
+            Text("학생: \(classCellVM.currentClass.students.count)명")
                 .font(.footnote)
                 .padding()
                 .offset(x: 0, y: 20)
         }
-        .background(Color.init(currentClass.color).opacity(0.3))
+        .background(Color.init(classCellVM.currentClass.color).opacity(0.3))
         .cornerRadius(20)
         .onAppear{
             UITableView.appearance().separatorColor = .clear

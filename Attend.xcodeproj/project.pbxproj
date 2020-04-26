@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0BF3978FD797E54BE6D3E526 /* Pods_Attend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCD9892749BCCB2A4204EF0 /* Pods_Attend.framework */; };
 		AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B02455CAEA00E6E977 /* Class.swift */; };
+		AD2B18B62455E1EE00E6E977 /* ClassCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B52455E1EE00E6E977 /* ClassCellViewModel.swift */; };
+		AD2B18B82455E3F700E6E977 /* ClassListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B72455E3F700E6E977 /* ClassListViewModel.swift */; };
 		ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
@@ -23,6 +25,8 @@
 		2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attend.release.xcconfig"; path = "Target Support Files/Pods-Attend/Pods-Attend.release.xcconfig"; sourceTree = "<group>"; };
 		6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attend.debug.xcconfig"; path = "Target Support Files/Pods-Attend/Pods-Attend.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2B18B02455CAEA00E6E977 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		AD2B18B52455E1EE00E6E977 /* ClassCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCellViewModel.swift; sourceTree = "<group>"; };
+		AD2B18B72455E3F700E6E977 /* ClassListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewModel.swift; sourceTree = "<group>"; };
 		ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AD2B18B42455E1DB00E6E977 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18B52455E1EE00E6E977 /* ClassCellViewModel.swift */,
+				AD2B18B72455E3F700E6E977 /* ClassListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		ADEAEA3F245541E600A0CB4B = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 		ADEAEA4A245541E600A0CB4B /* Attend */ = {
 			isa = PBXGroup;
 			children = (
+				AD2B18B42455E1DB00E6E977 /* ViewModel */,
 				AD2B18AF2455CADE00E6E977 /* Model */,
 				AD2B18B22455CB7500E6E977 /* App */,
 				AD2B18B32455CB7B00E6E977 /* Views */,
@@ -251,7 +265,9 @@
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
+				AD2B18B62455E1EE00E6E977 /* ClassCellViewModel.swift in Sources */,
 				AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */,
+				AD2B18B82455E3F700E6E977 /* ClassListViewModel.swift in Sources */,
 				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
