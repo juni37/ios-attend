@@ -1,5 +1,5 @@
 //
-//  ClassCellViewModel.swift
+//  StudentCellVM.swift
 //  Attend
 //
 //  Created by David Yoon on 4/27/20.
@@ -10,23 +10,23 @@ import Foundation
 import Combine
 import UIKit
 
-class ClassCellViewModel : ObservableObject, Identifiable {
-    @Published var currentClass: Class
+class StudentCellViewModel : ObservableObject, Identifiable {
+    @Published var student: Student
     var id: String = ""
-    @Published var color: UIColor = UIColor.white
+    @Published var color : UIColor = UIColor.white
     
     private var cancellables = Set<AnyCancellable>()
-    init(oclass: Class) {
-        self.currentClass = oclass
+    init(student: Student) {
+        self.student = student
         
-        $currentClass.map { cclass in
-            cclass.color
+        $student.map { student in
+            student.color
         }
         .assign(to: \.color, on: self)
         .store(in: &cancellables)
         
-        $currentClass.map { cclass in
-            cclass.id
+        $student.map { student in
+            student.id
         }
         .assign(to: \.id, on: self)
         .store(in: &cancellables)

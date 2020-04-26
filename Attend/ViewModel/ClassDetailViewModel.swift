@@ -1,5 +1,5 @@
 //
-//  ClassCellViewModel.swift
+//  ClassDetailViewModel.swift
 //  Attend
 //
 //  Created by David Yoon on 4/27/20.
@@ -7,26 +7,27 @@
 //
 
 import Foundation
+import SwiftUI
 import Combine
-import UIKit
 
-class ClassCellViewModel : ObservableObject, Identifiable {
-    @Published var currentClass: Class
+class ClassDetailViewModel : ObservableObject, Identifiable {
+    
+    @Published var classCellVM: ClassCellViewModel
     var id: String = ""
     @Published var color: UIColor = UIColor.white
     
     private var cancellables = Set<AnyCancellable>()
-    init(oclass: Class) {
-        self.currentClass = oclass
+    init(classCellVM: ClassCellViewModel) {
+        self.classCellVM = classCellVM
         
-        $currentClass.map { cclass in
-            cclass.color
+        $classCellVM.map { classCellVM in
+            classCellVM.color
         }
         .assign(to: \.color, on: self)
         .store(in: &cancellables)
         
-        $currentClass.map { cclass in
-            cclass.id
+        $classCellVM.map { classCellVM in
+            classCellVM.id
         }
         .assign(to: \.id, on: self)
         .store(in: &cancellables)
