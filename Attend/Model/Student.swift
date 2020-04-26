@@ -19,7 +19,7 @@ struct Student: Identifiable {
 
 #if DEBUG
 var testDataStudents = [
-    Student(name: "David", classes: [testDataClasses[0], testDataClasses[1]], color: colorList[1]),
-    Student(name: "David", classes: [testDataClasses[0], testDataClasses[1]], color: colorList[1])
+    Student(name: "David", classes: [testDataClasses[0], testDataClasses[1]], color: colorList[3]),
+    Student(name: "Paul", classes: [testDataClasses[0], testDataClasses[1]], color: colorList[2])
 ]
 #endif
