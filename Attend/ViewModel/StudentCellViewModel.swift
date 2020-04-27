@@ -13,17 +13,10 @@ import UIKit
 class StudentCellViewModel : ObservableObject, Identifiable {
     @Published var student: Student
     var id: String = ""
-    @Published var color : UIColor = UIColor.white
     
     private var cancellables = Set<AnyCancellable>()
     init(student: Student) {
         self.student = student
-        
-        $student.map { student in
-            student.color
-        }
-        .assign(to: \.color, on: self)
-        .store(in: &cancellables)
         
         $student.map { student in
             student.id

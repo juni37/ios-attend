@@ -13,17 +13,10 @@ import UIKit
 class ClassCellViewModel : ObservableObject, Identifiable {
     @Published var currentClass: Class
     var id: String = ""
-    @Published var color: UIColor = UIColor.white
     
     private var cancellables = Set<AnyCancellable>()
     init(oclass: Class) {
         self.currentClass = oclass
-        
-        $currentClass.map { cclass in
-            cclass.color
-        }
-        .assign(to: \.color, on: self)
-        .store(in: &cancellables)
         
         $currentClass.map { cclass in
             cclass.id

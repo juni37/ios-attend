@@ -18,7 +18,7 @@ struct StudentSummaryView: View {
                 .font(.body)
                 .bold()
             Spacer()
-            TextButton(buttonTitle: "출석", buttonColor: Color.green.opacity(0.7))
+            TextButton(buttonTitle: studentCellVM.student.classes[0].name, buttonColor: Color.black.opacity(0.3))
         }
     }
 }
