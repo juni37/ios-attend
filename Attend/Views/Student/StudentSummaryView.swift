@@ -10,7 +10,8 @@ import SwiftUI
 
 struct StudentSummaryView: View {
     @ObservedObject var studentCellVM: StudentCellViewModel
-
+    @State var isPresented: Bool = false
+    
     var body: some View {
         HStack {
             Text(studentCellVM.student.name)

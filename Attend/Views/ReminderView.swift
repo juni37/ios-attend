@@ -11,16 +11,19 @@ import SwiftUI
 
 struct ReminderView: View {
     @State var count : Int
+    @State var iconImage : String
+    @State var color : Color
+    @State var descriptionText : String
     
     var body: some View {
         HStack {
             VStack (alignment: .center, spacing: 10) {
-                Image(systemName: "calendar.circle.fill")
+                Image(systemName: iconImage)
                     .resizable()
                     .frame(width: 30, height: 30, alignment: .center)
-                    .foregroundColor(.green)
+                    .foregroundColor(color)
                 
-                Text("오늘")
+                Text(descriptionText)
                     .foregroundColor(Color.black.opacity(0.5))
                     .bold()
             }.padding()

@@ -17,7 +17,14 @@ struct ClassDetailView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Text("시간 : " + classDetailViewModel.classCellVM.currentClass.time)
+                Spacer()
+                Text("학생수 : " + String(classDetailViewModel.classCellVM.currentClass.students.count))
+                
+            }.padding()
             AttendanceButton()
+            
             List {
                 ForEach(testDataStudents) { student in
                     VStack {

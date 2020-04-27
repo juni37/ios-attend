@@ -13,7 +13,8 @@ struct TextButton: View {
     @State var buttonColor : Color
     
     var body: some View {
-        Button(action: {}) {
+        Button(action: {
+        }) {
             Text(buttonTitle)
             .bold()
         }.buttonStyle(RequestButtonStyle(buttonColor: buttonColor))
@@ -28,7 +29,7 @@ struct RequestButtonStyle: ButtonStyle {
             .font(.system(size: 12))
             .foregroundColor(.black)
             .padding(EdgeInsets(top: 7, leading: 15, bottom: 7, trailing: 15))
-            .frame(width: 90, height: 35, alignment: .center)
+            .frame(height: 35, alignment: .center)
             .background(buttonColor)
             .cornerRadius(10)
         
@@ -38,6 +39,6 @@ struct RequestButtonStyle: ButtonStyle {
 
 struct TextButton_Previews: PreviewProvider {
     static var previews: some View {
-        TextButton(buttonTitle: "Request", buttonColor: .black)
+        TextButton(buttonTitle: "Request", buttonColor: Color.black.opacity(0.1))
     }
 }

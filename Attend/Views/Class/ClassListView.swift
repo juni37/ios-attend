@@ -12,14 +12,13 @@ struct ClassListView: View {
     @ObservedObject var classListViewModel = ClassListViewModel()
     @State var showModal: Bool = false
 
-    let colorList: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.orange, UIColor.purple]
     var classes = testDataClasses
     
     
     var body: some View {
         NavigationView {
             VStack {
-                ReminderView(count: classes.count)
+                ReminderView(count: classes.count, iconImage: "calendar.circle.fill", color: Color.red, descriptionText: "수업")
                 List {
                     ForEach(classListViewModel.classCellViewModels) { classCellVM in
                         VStack {

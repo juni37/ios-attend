@@ -29,7 +29,7 @@ struct ClassSummaryView: View {
                 .padding()
                 .offset(x: 0, y: 20)
         }
-        .background(Color.init(classCellVM.currentClass.color).opacity(0.3))
+        .background(Color.black.opacity(0.03))
         .cornerRadius(20)
         .onAppear{
             UITableView.appearance().separatorColor = .clear
