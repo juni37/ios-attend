@@ -17,9 +17,6 @@ struct StudentDetailView: View {
                 ForEach(testDataClasses) { oclass in
                     VStack {
                         ClassSummaryView(classCellVM: ClassCellViewModel(oclass: oclass))
-                        NavigationLink(destination: ClassSummaryView(classCellVM: ClassCellViewModel(oclass: oclass))) {
-                            EmptyView().frame(width: 0, height: 0, alignment: .center)
-                        }
                     }
                 }
                 

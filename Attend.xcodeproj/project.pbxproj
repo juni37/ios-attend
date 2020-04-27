@@ -21,7 +21,7 @@
 		AD2B18C82455ED9F00E6E977 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */; };
 		AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */; };
 		AD2B18CC2455F3EF00E6E977 /* StudentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */; };
-		ADCCA97A2456E843005D07AA /* TripleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9792456E843005D07AA /* TripleButton.swift */; };
+		ADCCA97A2456E843005D07AA /* AttendanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9792456E843005D07AA /* AttendanceButton.swift */; };
 		ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97B2456E8AA005D07AA /* TextButton.swift */; };
 		ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97F2456EC3C005D07AA /* UserSelection.swift */; };
 		ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */; };
@@ -50,9 +50,32 @@
 		AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
 		AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
 		AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewModel.swift; sourceTree = "<group>"; };
-		ADCCA9792456E843005D07AA /* TripleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleButton.swift; sourceTree = "<group>"; };
+		ADCCA9792456E843005D07AA /* AttendanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceButton.swift; sourceTree = "<group>"; };
 		ADCCA97B2456E8AA005D07AA /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		ADCCA97F2456EC3C005D07AA /* UserSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelection.swift; sourceTree = "<group>"; };
+		ADCCA9822456F1E7005D07AA /* NanumMyeongjoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoBold.ttf; sourceTree = "<group>"; };
+		ADCCA9832456F1E8005D07AA /* NanumGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicLight.ttf; sourceTree = "<group>"; };
+		ADCCA9842456F1E8005D07AA /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
+		ADCCA9852456F1E8005D07AA /* NanumBarunpenRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenRegular.ttf; sourceTree = "<group>"; };
+		ADCCA9862456F1E8005D07AA /* NanumSquareExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareExtraBold.ttf; sourceTree = "<group>"; };
+		ADCCA9872456F1E8005D07AA /* NanumBrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBrush.ttf; sourceTree = "<group>"; };
+		ADCCA9882456F1E9005D07AA /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothic.ttf; sourceTree = "<group>"; };
+		ADCCA9892456F1E9005D07AA /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
+		ADCCA98A2456F1E9005D07AA /* NanumBarunGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicLight.ttf; sourceTree = "<group>"; };
+		ADCCA98B2456F1EA005D07AA /* NanumGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.ttf; sourceTree = "<group>"; };
+		ADCCA98C2456F1EA005D07AA /* NanumMyeongjoExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoExtraBold.ttf; sourceTree = "<group>"; };
+		ADCCA98D2456F1EA005D07AA /* NanumSquareBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareBold.ttf; sourceTree = "<group>"; };
+		ADCCA98E2456F1EB005D07AA /* NanumPen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumPen.ttf; sourceTree = "<group>"; };
+		ADCCA98F2456F1EB005D07AA /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
+		ADCCA9902456F1EB005D07AA /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		ADCCA9912456F1EC005D07AA /* NanumBarunpenBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenBold.ttf; sourceTree = "<group>"; };
+		ADCCA9922456F1EC005D07AA /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
+		ADCCA9932456F1EC005D07AA /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
+		ADCCA9942456F1EC005D07AA /* NanumSquareLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareLight.ttf; sourceTree = "<group>"; };
+		ADCCA9952456F1ED005D07AA /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundL.ttf; sourceTree = "<group>"; };
+		ADCCA9962456F1ED005D07AA /* NanumBarunGothicUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicUltraLight.ttf; sourceTree = "<group>"; };
+		ADCCA9972456F1ED005D07AA /* NanumMyeongjo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjo.ttf; sourceTree = "<group>"; };
+		ADCCA9982456F1ED005D07AA /* NanumSquareRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRegular.ttf; sourceTree = "<group>"; };
 		ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +147,7 @@
 				AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */,
 				AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */,
 				ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */,
-				ADCCA9792456E843005D07AA /* TripleButton.swift */,
+				ADCCA9792456E843005D07AA /* AttendanceButton.swift */,
 				ADCCA97B2456E8AA005D07AA /* TextButton.swift */,
 			);
 			path = Views;
@@ -146,6 +169,29 @@
 		ADCCA9812456F0D1005D07AA /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCA9882456F1E9005D07AA /* NanumBarunGothic.ttf */,
+				ADCCA9842456F1E8005D07AA /* NanumBarunGothicBold.ttf */,
+				ADCCA98A2456F1E9005D07AA /* NanumBarunGothicLight.ttf */,
+				ADCCA9962456F1ED005D07AA /* NanumBarunGothicUltraLight.ttf */,
+				ADCCA9912456F1EC005D07AA /* NanumBarunpenBold.ttf */,
+				ADCCA9852456F1E8005D07AA /* NanumBarunpenRegular.ttf */,
+				ADCCA9872456F1E8005D07AA /* NanumBrush.ttf */,
+				ADCCA98B2456F1EA005D07AA /* NanumGothic.ttf */,
+				ADCCA9902456F1EB005D07AA /* NanumGothicBold.ttf */,
+				ADCCA9932456F1EC005D07AA /* NanumGothicExtraBold.ttf */,
+				ADCCA9832456F1E8005D07AA /* NanumGothicLight.ttf */,
+				ADCCA9972456F1ED005D07AA /* NanumMyeongjo.ttf */,
+				ADCCA9822456F1E7005D07AA /* NanumMyeongjoBold.ttf */,
+				ADCCA98C2456F1EA005D07AA /* NanumMyeongjoExtraBold.ttf */,
+				ADCCA98E2456F1EB005D07AA /* NanumPen.ttf */,
+				ADCCA98D2456F1EA005D07AA /* NanumSquareBold.ttf */,
+				ADCCA9862456F1E8005D07AA /* NanumSquareExtraBold.ttf */,
+				ADCCA9942456F1EC005D07AA /* NanumSquareLight.ttf */,
+				ADCCA9982456F1ED005D07AA /* NanumSquareRegular.ttf */,
+				ADCCA98F2456F1EB005D07AA /* NanumSquareRoundB.ttf */,
+				ADCCA9922456F1EC005D07AA /* NanumSquareRoundEB.ttf */,
+				ADCCA9952456F1ED005D07AA /* NanumSquareRoundL.ttf */,
+				ADCCA9892456F1E9005D07AA /* NanumSquareRoundR.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -309,7 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCCA97A2456E843005D07AA /* TripleButton.swift in Sources */,
+				ADCCA97A2456E843005D07AA /* AttendanceButton.swift in Sources */,
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
 				ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,

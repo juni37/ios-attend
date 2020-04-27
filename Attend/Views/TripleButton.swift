@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TripleButton: View {
+struct AttendanceButton: View {
     var body: some View {
         HStack {
             TextButton(buttonTitle: "출석", buttonColor: Color.green.opacity(0.7))
@@ -26,6 +26,6 @@ struct TripleButton: View {
 
 struct TripleButton_Previews: PreviewProvider {
     static var previews: some View {
-        TripleButton()
+        AttendanceButton()
     }
 }

@@ -17,6 +17,7 @@ struct ClassDetailView: View {
     
     var body: some View {
         VStack {
+            AttendanceButton()
             List {
                 ForEach(testDataStudents) { student in
                     VStack {
