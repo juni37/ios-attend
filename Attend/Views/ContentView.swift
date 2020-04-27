@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection){
-            ClassListView()
+            ClassListView(showModal: false)
                 .tabItem {
                     VStack {
                         Image(systemName: "book.fill")
@@ -21,7 +21,7 @@ struct ContentView: View {
                     }
             }
             .tag(0)
-            ClassListView()
+            StudentListView(showModal: false)
                 .tabItem {
                     VStack {
                         Image(systemName: "person.2.fill")

@@ -21,7 +21,7 @@ struct Class: Identifiable {
 #if DEBUG
 let colorList: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.orange, UIColor.purple]
 var testDataClasses = [
-    Class(name: "iOS Programming", time: "7:00 - 9:00", students: ["david", "chris"], color: colorList[1]),
-    Class(name: "iOS Refactoring", time: "6:00 - 10:00", students: ["david", "chris"], color: colorList[2])
+    Class(name: "2학년 2반", time: "9:00 - 10:00", students: ["윤석준", "김유준"], color: colorList[1]),
+    Class(name: "2학년 4반", time: "11:00 - 12:00", students: ["윤석준", "김유준"], color: colorList[2])
 ]
 #endif

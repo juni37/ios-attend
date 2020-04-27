@@ -14,6 +14,15 @@ struct ClassListView: View {
 
     var classes = testDataClasses
     
+    init(showModal: Bool) {
+        UITableView().separatorColor = UIColor.clear
+        self.showModal = showModal
+        UITableView.appearance().tableFooterView = UIView()
+        UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().allowsSelection = false
+        UITableViewCell.appearance().selectionStyle = .none
+
+    }
     
     var body: some View {
         NavigationView {
@@ -28,7 +37,6 @@ struct ClassListView: View {
                             }
                         }
                     }
-                    
                 }
             }
             .navigationBarTitle("수업")
@@ -50,7 +58,11 @@ struct ClassListView: View {
         @State var showModal: Bool = false
 
         static var previews: some View {
-            ClassListView(showModal: false)
+            Group {
+                ClassListView(showModal: false)
+                ClassListView(showModal: false)
+                    .previewDevice("iPhone 8")
+            }
         }
     }
 }
