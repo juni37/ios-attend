@@ -21,6 +21,9 @@
 		AD2B18C82455ED9F00E6E977 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */; };
 		AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */; };
 		AD2B18CC2455F3EF00E6E977 /* StudentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */; };
+		ADCCA97A2456E843005D07AA /* TripleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9792456E843005D07AA /* TripleButton.swift */; };
+		ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97B2456E8AA005D07AA /* TextButton.swift */; };
+		ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97F2456EC3C005D07AA /* UserSelection.swift */; };
 		ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
@@ -47,6 +50,9 @@
 		AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
 		AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
 		AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewModel.swift; sourceTree = "<group>"; };
+		ADCCA9792456E843005D07AA /* TripleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleButton.swift; sourceTree = "<group>"; };
+		ADCCA97B2456E8AA005D07AA /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		ADCCA97F2456EC3C005D07AA /* UserSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelection.swift; sourceTree = "<group>"; };
 		ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				AD2B18B02455CAEA00E6E977 /* Class.swift */,
 				AD2B18C52455EBF500E6E977 /* Student.swift */,
+				ADCCA97F2456EC3C005D07AA /* UserSelection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +124,8 @@
 				AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */,
 				AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */,
 				ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */,
+				ADCCA9792456E843005D07AA /* TripleButton.swift */,
+				ADCCA97B2456E8AA005D07AA /* TextButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +141,13 @@
 				AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADCCA9812456F0D1005D07AA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		ADEAEA3F245541E600A0CB4B = {
@@ -155,6 +171,7 @@
 		ADEAEA4A245541E600A0CB4B /* Attend */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCA9812456F0D1005D07AA /* Font */,
 				AD2B18B42455E1DB00E6E977 /* ViewModel */,
 				AD2B18AF2455CADE00E6E977 /* Model */,
 				AD2B18B22455CB7500E6E977 /* App */,
@@ -292,7 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCCA97A2456E843005D07AA /* TripleButton.swift in Sources */,
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
+				ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
 				AD2B18BC2455EA4200E6E977 /* ClassSummaryView.swift in Sources */,
@@ -307,6 +326,7 @@
 				AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */,
 				AD2B18CC2455F3EF00E6E977 /* StudentDetailViewModel.swift in Sources */,
 				AD2B18B82455E3F700E6E977 /* ClassListViewModel.swift in Sources */,
+				ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */,
 				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 				AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */,
 			);

@@ -13,25 +13,11 @@ struct StudentSummaryView: View {
 
     var body: some View {
         HStack {
-            VStack (alignment: .leading, spacing: 10) {
-                Text("\(studentCellVM.student.classes.count)")
-                    .foregroundColor(Color.black.opacity(0.5))
-                    .bold()
-                    .font(.caption)
-                Text(studentCellVM.student.name)
-                    .font(.title)
-                    .bold()
-            }.padding()
+            Text(studentCellVM.student.name)
+                .font(.body)
+                .bold()
             Spacer()
-            Text("수업: \(studentCellVM.student.classes.count)개")
-                .font(.footnote)
-                .padding()
-                .offset(x: 0, y: 20)
-        }
-        .background(Color.init(studentCellVM.color).opacity(0.3))
-        .cornerRadius(20)
-        .onAppear{
-            UITableView.appearance().separatorColor = .clear
+            TextButton(buttonTitle: "출석", buttonColor: Color.green.opacity(0.7))
         }
     }
 }
