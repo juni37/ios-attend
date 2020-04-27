@@ -26,6 +26,9 @@
 		ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97F2456EC3C005D07AA /* UserSelection.swift */; };
 		ADCCA99A2456F70C005D07AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9992456F70C005D07AA /* ContentView.swift */; };
 		ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99D24573C38005D07AA /* StudentListView.swift */; };
+		ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99F24574597005D07AA /* AddStudentView.swift */; };
+		ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A1245746B0005D07AA /* SessionStore.swift */; };
+		ADCCA9A4245747EC005D07AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A3245747EC005D07AA /* User.swift */; };
 		ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
@@ -80,6 +83,9 @@
 		ADCCA9982456F1ED005D07AA /* NanumSquareRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRegular.ttf; sourceTree = "<group>"; };
 		ADCCA9992456F70C005D07AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADCCA99D24573C38005D07AA /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		ADCCA99F24574597005D07AA /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
+		ADCCA9A1245746B0005D07AA /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		ADCCA9A3245747EC005D07AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				AD2B18B02455CAEA00E6E977 /* Class.swift */,
 				AD2B18C52455EBF500E6E977 /* Student.swift */,
 				ADCCA97F2456EC3C005D07AA /* UserSelection.swift */,
+				ADCCA9A3245747EC005D07AA /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 			children = (
 				ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */,
 				ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */,
+				ADCCA9A1245746B0005D07AA /* SessionStore.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 				AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */,
 				AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */,
 				ADCCA99D24573C38005D07AA /* StudentListView.swift */,
+				ADCCA99F24574597005D07AA /* AddStudentView.swift */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -380,7 +389,9 @@
 				ADCCA97A2456E843005D07AA /* AttendanceButton.swift in Sources */,
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
 				ADCCA99A2456F70C005D07AA /* ContentView.swift in Sources */,
+				ADCCA9A4245747EC005D07AA /* User.swift in Sources */,
 				ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */,
+				ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
 				ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */,
@@ -390,6 +401,7 @@
 				AD2B18C62455EBF500E6E977 /* Student.swift in Sources */,
 				AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */,
 				AD2B18C02455EAB300E6E977 /* ClassDetailViewModel.swift in Sources */,
+				ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */,
 				AD2B18BA2455EA2C00E6E977 /* ClassDetailView.swift in Sources */,
 				AD2B18C42455EBDD00E6E977 /* StudentCellViewModel.swift in Sources */,
 				AD2B18BE2455EA7B00E6E977 /* ReminderView.swift in Sources */,

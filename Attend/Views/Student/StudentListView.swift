@@ -28,7 +28,7 @@ struct StudentListView: View {
                             }
                         }
                     }
-                    
+                    .onDelete(perform: delete)
                 }
             }
             .navigationBarTitle("학생")
@@ -39,10 +39,13 @@ struct StudentListView: View {
                             .imageScale(.large)
                 }
                 .sheet(isPresented: $showModal){
-                    AddClassesView(showModal: self.$showModal)
+                    AddStudentView(showModal: self.$showModal)
             })
             
         }
+    }
+    func delete(at offsets: IndexSet) {
+        studentListViewModel.studentCellViewModels.remove(atOffsets: offsets)
     }
 }
 
