@@ -49,7 +49,7 @@ struct ClassListView: View {
                             .imageScale(.large)
                 }
                 .sheet(isPresented: $showModal){
-                    AddClassesView(showModal: self.$showModal)
+                    AddClassesView(classListVM: self.classListViewModel, showModal: self.$showModal)
             })
             
         }

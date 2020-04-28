@@ -28,7 +28,7 @@
 		ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99D24573C38005D07AA /* StudentListView.swift */; };
 		ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99F24574597005D07AA /* AddStudentView.swift */; };
 		ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A1245746B0005D07AA /* SessionStore.swift */; };
-		ADCCA9A4245747EC005D07AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A3245747EC005D07AA /* User.swift */; };
+		ADCCA9A4245747EC005D07AA /* OUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A3245747EC005D07AA /* OUser.swift */; };
 		ADCCA9A72457499C005D07AA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A62457499C005D07AA /* SignInView.swift */; };
 		ADCCA9A9245749F5005D07AA /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A8245749F5005D07AA /* AuthView.swift */; };
 		ADCCA9AC24574DA3005D07AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */; };
@@ -39,6 +39,9 @@
 		ADCCA9B82457526D005D07AA /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B42457526D005D07AA /* Keychain.swift */; };
 		ADCCA9B92457526D005D07AA /* SharedWebCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */; };
 		ADCCA9BB245753F4005D07AA /* EnvironmentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */; };
+		ADCCA9BD245805A5005D07AA /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BC245805A5005D07AA /* AuthenticationService.swift */; };
+		ADCCA9C0245806E5005D07AA /* ClassRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BF245806E5005D07AA /* ClassRepository.swift */; };
+		ADCCA9C224580BD8005D07AA /* AppDelegate+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
 		ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ClassListView.swift */; };
@@ -94,7 +97,7 @@
 		ADCCA99D24573C38005D07AA /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		ADCCA99F24574597005D07AA /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
 		ADCCA9A1245746B0005D07AA /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		ADCCA9A3245747EC005D07AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ADCCA9A3245747EC005D07AA /* OUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUser.swift; sourceTree = "<group>"; };
 		ADCCA9A62457499C005D07AA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		ADCCA9A8245749F5005D07AA /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		ADCCA9AA24574C7C005D07AA /* Attend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Attend.entitlements; sourceTree = "<group>"; };
@@ -106,6 +109,9 @@
 		ADCCA9B42457526D005D07AA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedWebCredential.swift; sourceTree = "<group>"; };
 		ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentWindowKey.swift; sourceTree = "<group>"; };
+		ADCCA9BC245805A5005D07AA /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		ADCCA9BF245806E5005D07AA /* ClassRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepository.swift; sourceTree = "<group>"; };
+		ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+.swift"; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,7 +159,7 @@
 				AD2B18B02455CAEA00E6E977 /* Class.swift */,
 				AD2B18C52455EBF500E6E977 /* Student.swift */,
 				ADCCA97F2456EC3C005D07AA /* UserSelection.swift */,
-				ADCCA9A3245747EC005D07AA /* User.swift */,
+				ADCCA9A3245747EC005D07AA /* OUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 				ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */,
 				ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */,
 				ADCCA9A1245746B0005D07AA /* SessionStore.swift */,
+				ADCCA9BC245805A5005D07AA /* AuthenticationService.swift */,
+				ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -269,6 +277,14 @@
 			path = CredentialStorage;
 			sourceTree = "<group>";
 		};
+		ADCCA9BE245806D1005D07AA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9BF245806E5005D07AA /* ClassRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		ADEAEA3F245541E600A0CB4B = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +306,7 @@
 		ADEAEA4A245541E600A0CB4B /* Attend */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCA9BE245806D1005D07AA /* Repositories */,
 				ADCCA9AA24574C7C005D07AA /* Attend.entitlements */,
 				ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */,
 				ADCCA9812456F0D1005D07AA /* Font */,
@@ -435,8 +452,9 @@
 				ADCCA9BB245753F4005D07AA /* EnvironmentWindowKey.swift in Sources */,
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
 				ADCCA99A2456F70C005D07AA /* ContentView.swift in Sources */,
-				ADCCA9A4245747EC005D07AA /* User.swift in Sources */,
+				ADCCA9A4245747EC005D07AA /* OUser.swift in Sources */,
 				ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */,
+				ADCCA9C224580BD8005D07AA /* AppDelegate+.swift in Sources */,
 				ADCCA9B92457526D005D07AA /* SharedWebCredential.swift in Sources */,
 				ADCCA9B02457522C005D07AA /* SignInWithAppleDelegates.swift in Sources */,
 				ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */,
@@ -445,6 +463,7 @@
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
 				ADCCA9A9245749F5005D07AA /* AuthView.swift in Sources */,
 				ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */,
+				ADCCA9C0245806E5005D07AA /* ClassRepository.swift in Sources */,
 				AD2B18BC2455EA4200E6E977 /* ClassSummaryView.swift in Sources */,
 				AD2B18B62455E1EE00E6E977 /* ClassCellViewModel.swift in Sources */,
 				AD2B18C82455ED9F00E6E977 /* StudentListViewModel.swift in Sources */,
@@ -465,6 +484,7 @@
 				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 				AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */,
 				ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */,
+				ADCCA9BD245805A5005D07AA /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

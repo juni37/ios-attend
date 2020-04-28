@@ -1,4 +1,5 @@
 PODS:
+  - Disk (0.6.4)
   - Firebase/Analytics (6.23.0):
     - Firebase/Core
   - Firebase/Auth (6.23.0):
@@ -78,13 +79,17 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
+  - Resolver (1.1.2)
 
 DEPENDENCIES:
+  - Disk
   - Firebase/Analytics
   - Firebase/Auth
+  - Resolver
 
 SPEC REPOS:
   trunk:
+    - Disk
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -100,8 +105,10 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - PromisesObjC
+    - Resolver
 
 SPEC CHECKSUMS:
+  Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Firebase: 585ae467b3edda6a5444e788fda6888f024d8d6f
   FirebaseAnalytics: 558f7a03d19de451093032c806f39d5f9dff096e
   FirebaseAuth: e50319ecc114acf93c2b9581e15d6604ddd7eeb2
@@ -117,7 +124,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  Resolver: e04ca5a9a19906f2e5cdceb2b90edd3b5daed049
 
-PODFILE CHECKSUM: 9e2a2db244ee33dab2cfde6d853f7face2293ace
+PODFILE CHECKSUM: 58a6f843e1f871952bf131d58bd08e225bcdb117
 
 COCOAPODS: 1.9.1

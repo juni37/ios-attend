@@ -15,7 +15,7 @@ import AuthenticationServices
 
 class SessionStore : ObservableObject {
     var didChange = PassthroughSubject<SessionStore, Never>()
-    var session: User? { didSet { self.didChange.send(self) }}
+    var session: OUser? { didSet { self.didChange.send(self) }}
     var handle: AuthStateDidChangeListenerHandle?
 
     func listen () {
@@ -24,7 +24,7 @@ class SessionStore : ObservableObject {
             if let user = user {
                 // if we have a user, create a new user model
                 print("Got user: \(user)")
-                self.session = User(
+                self.session = OUser(
                     uid: user.uid,
                     displayName: user.displayName,
                     email: user.email

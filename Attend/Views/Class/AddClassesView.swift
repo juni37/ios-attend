@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct AddClassesView: View {
+    @State var classListVM: ClassListViewModel
     @State var classTitle: String = ""
     @State var timeLabel: String = ""
     @Binding var showModal: Bool
@@ -29,6 +30,7 @@ struct AddClassesView: View {
             }
             .navigationBarTitle("수업 추가")
             .navigationBarItems(trailing: Button(action: {
+                self.classListVM.addClass(oclass: Class(id: UUID().uuidString, name: self.classTitle, time: self.timeLabel, students: []))
                 self.showModal.toggle()
             }) {
                 Text("수업 추가")
@@ -38,8 +40,3 @@ struct AddClassesView: View {
     }
 }
 
-struct AddClassesView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddClassesView(showModal: .constant(true))
-    }
-}

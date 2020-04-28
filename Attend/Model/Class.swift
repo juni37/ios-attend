@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Class: Identifiable {
+struct Class: Codable, Identifiable {
     var id: String = UUID().uuidString
     var name: String
     var time: String
