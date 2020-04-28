@@ -9,15 +9,16 @@
 import Foundation
 import UIKit
 
-struct Student: Identifiable {
+struct Student: Codable, Identifiable {
     var id: String = UUID().uuidString
     var name: String
     var classes: [Class]
+    var attendance: [Attend]
 }
 
 #if DEBUG
 var testDataStudents = [
-    Student(name: "김유준", classes: [testDataClasses[0], testDataClasses[1]]),
-    Student(name: "윤석준", classes: [testDataClasses[0], testDataClasses[1]])
+    Student(name: "김유준", classes: [testDataClasses[0], testDataClasses[1]], attendance: []),
+    Student(name: "윤석준", classes: [testDataClasses[0], testDataClasses[1]], attendance: [])
 ]
 #endif

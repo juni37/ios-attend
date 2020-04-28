@@ -18,7 +18,14 @@ struct StudentSummaryView: View {
                 .font(.body)
                 .bold()
             Spacer()
-            TextButton(buttonTitle: studentCellVM.student.classes[0].name, buttonColor: Color.black.opacity(0.03))
+            
+            Group {
+                if studentCellVM.student.classes.count > 0 {
+                    TextButton(buttonTitle: studentCellVM.student.classes[0].name, buttonColor: Color.black.opacity(0.03))
+                } else {
+                    TextButton(buttonTitle: "반배정 필요", buttonColor: Color.black.opacity(0.03))
+                }
+            }
         }
     }
 }

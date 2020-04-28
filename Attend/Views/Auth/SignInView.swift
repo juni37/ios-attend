@@ -40,7 +40,7 @@ struct SignInView : View {
                 Spacer()
                 Image("AppLogo")
                     .resizable()
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 200, height: 200, alignment: .center)
                 Spacer()
                 VStack {
                     SignInWithApple()

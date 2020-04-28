@@ -37,8 +37,10 @@ struct ClassListView: View {
                             }
                         }
                     }
-                    .onDelete(perform: delete)
-                    
+                    .onDelete { indexSet in
+                        self.classListViewModel.removeClasses(atOffsets: indexSet)
+                    }
+
                 }
             }
             .navigationBarTitle("수업")

@@ -22,7 +22,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if (!loggedin) {
+            if (loggedin) {
                 TabView(selection: $selection){
                     ClassListView(showModal: false)
                         .tabItem {
@@ -45,9 +45,10 @@ struct ContentView: View {
             }
             else {
                 SignInView()
+                .onAppear {
+                    self.performExistingAccountSetupFlows()
+                }
             }
-        }.onAppear {
-            self.performExistingAccountSetupFlows()
         }
         
     }
