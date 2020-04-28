@@ -18,7 +18,7 @@ struct StudentListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                ReminderView(count: students.count, iconImage: "person.circle.fill", color: Color.blue, descriptionText: "학생")
+                ReminderView(count: studentListViewModel.studentCellViewModels.count, iconImage: "person.circle.fill", color: Color.blue, descriptionText: "학생")
                 List {
                     ForEach(studentListViewModel.studentCellViewModels) { studentCellVM in
                         VStack {
