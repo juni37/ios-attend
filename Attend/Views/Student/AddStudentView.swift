@@ -38,10 +38,11 @@ struct AddStudentView: View {
             .navigationBarTitle("학생 추가")
             .navigationBarItems(trailing: Button(action: {
                 
-                if self.studentListVM.classRepository.classes.count < self.selection {
+                if self.studentListVM.classRepository.classes.count <= self.selection {
                     self.studentListVM.addStudent(student: Student(id: UUID().uuidString, name: self.studentName, classes: [], attendance: []))
+                } else {
+                    self.studentListVM.addStudent(student: Student(id: UUID().uuidString, name: self.studentName, classes: [self.studentListVM.classRepository.classes[self.selection]], attendance: []))
                 }
-                self.studentListVM.addStudent(student: Student(id: UUID().uuidString, name: self.studentName, classes: [self.studentListVM.classRepository.classes[self.selection]], attendance: []))
                 self.showModal.toggle()
             }) {
                 Text("학생 추가")
