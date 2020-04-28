@@ -29,7 +29,16 @@
 		ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99F24574597005D07AA /* AddStudentView.swift */; };
 		ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A1245746B0005D07AA /* SessionStore.swift */; };
 		ADCCA9A4245747EC005D07AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A3245747EC005D07AA /* User.swift */; };
-		ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */; };
+		ADCCA9A72457499C005D07AA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A62457499C005D07AA /* SignInView.swift */; };
+		ADCCA9A9245749F5005D07AA /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A8245749F5005D07AA /* AuthView.swift */; };
+		ADCCA9AC24574DA3005D07AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */; };
+		ADCCA9AE24575023005D07AA /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9AD24575023005D07AA /* SignInWithApple.swift */; };
+		ADCCA9B02457522C005D07AA /* SignInWithAppleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9AF2457522C005D07AA /* SignInWithAppleDelegates.swift */; };
+		ADCCA9B62457526D005D07AA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B22457526D005D07AA /* UserData.swift */; };
+		ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B32457526D005D07AA /* UserDataKeychain.swift */; };
+		ADCCA9B82457526D005D07AA /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B42457526D005D07AA /* Keychain.swift */; };
+		ADCCA9B92457526D005D07AA /* SharedWebCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */; };
+		ADCCA9BB245753F4005D07AA /* EnvironmentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
 		ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ClassListView.swift */; };
@@ -86,7 +95,17 @@
 		ADCCA99F24574597005D07AA /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
 		ADCCA9A1245746B0005D07AA /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		ADCCA9A3245747EC005D07AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADCCA9A62457499C005D07AA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		ADCCA9A8245749F5005D07AA /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		ADCCA9AA24574C7C005D07AA /* Attend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Attend.entitlements; sourceTree = "<group>"; };
+		ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADCCA9AD24575023005D07AA /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
+		ADCCA9AF2457522C005D07AA /* SignInWithAppleDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegates.swift; sourceTree = "<group>"; };
+		ADCCA9B22457526D005D07AA /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		ADCCA9B32457526D005D07AA /* UserDataKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataKeychain.swift; sourceTree = "<group>"; };
+		ADCCA9B42457526D005D07AA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedWebCredential.swift; sourceTree = "<group>"; };
+		ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentWindowKey.swift; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +171,7 @@
 		AD2B18B32455CB7B00E6E977 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCA9A52457498F005D07AA /* Auth */,
 				ADCCA9992456F70C005D07AA /* ContentView.swift */,
 				ADCCA99B24573C09005D07AA /* Class */,
 				ADCCA99C24573C19005D07AA /* Student */,
@@ -227,6 +247,28 @@
 			path = Student;
 			sourceTree = "<group>";
 		};
+		ADCCA9A52457498F005D07AA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9A62457499C005D07AA /* SignInView.swift */,
+				ADCCA9A8245749F5005D07AA /* AuthView.swift */,
+				ADCCA9AD24575023005D07AA /* SignInWithApple.swift */,
+				ADCCA9AF2457522C005D07AA /* SignInWithAppleDelegates.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		ADCCA9B12457526D005D07AA /* CredentialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9B22457526D005D07AA /* UserData.swift */,
+				ADCCA9B32457526D005D07AA /* UserDataKeychain.swift */,
+				ADCCA9B42457526D005D07AA /* Keychain.swift */,
+				ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */,
+			);
+			path = CredentialStorage;
+			sourceTree = "<group>";
+		};
 		ADEAEA3F245541E600A0CB4B = {
 			isa = PBXGroup;
 			children = (
@@ -248,15 +290,18 @@
 		ADEAEA4A245541E600A0CB4B /* Attend */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCA9AA24574C7C005D07AA /* Attend.entitlements */,
+				ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */,
 				ADCCA9812456F0D1005D07AA /* Font */,
+				ADCCA9B12457526D005D07AA /* CredentialStorage */,
 				AD2B18B42455E1DB00E6E977 /* ViewModel */,
 				AD2B18AF2455CADE00E6E977 /* Model */,
 				AD2B18B22455CB7500E6E977 /* App */,
 				AD2B18B32455CB7B00E6E977 /* Views */,
 				ADEAEA51245541E800A0CB4B /* Assets.xcassets */,
+				ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */,
 				ADEAEA56245541E800A0CB4B /* LaunchScreen.storyboard */,
 				ADEAEA59245541E800A0CB4B /* Info.plist */,
-				ADDB89C62455C8CC00E0757B /* GoogleService-Info.plist */,
 				ADEAEA53245541E800A0CB4B /* Preview Content */,
 			);
 			path = Attend;
@@ -330,8 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADDB89C72455C8CC00E0757B /* GoogleService-Info.plist in Resources */,
 				ADEAEA58245541E800A0CB4B /* LaunchScreen.storyboard in Resources */,
+				ADCCA9AC24574DA3005D07AA /* GoogleService-Info.plist in Resources */,
 				ADEAEA55245541E800A0CB4B /* Preview Assets.xcassets in Resources */,
 				ADEAEA52245541E800A0CB4B /* Assets.xcassets in Resources */,
 			);
@@ -387,21 +432,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCCA97A2456E843005D07AA /* AttendanceButton.swift in Sources */,
+				ADCCA9BB245753F4005D07AA /* EnvironmentWindowKey.swift in Sources */,
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
 				ADCCA99A2456F70C005D07AA /* ContentView.swift in Sources */,
 				ADCCA9A4245747EC005D07AA /* User.swift in Sources */,
 				ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */,
+				ADCCA9B92457526D005D07AA /* SharedWebCredential.swift in Sources */,
+				ADCCA9B02457522C005D07AA /* SignInWithAppleDelegates.swift in Sources */,
 				ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */,
+				ADCCA9AE24575023005D07AA /* SignInWithApple.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
+				ADCCA9A9245749F5005D07AA /* AuthView.swift in Sources */,
 				ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */,
 				AD2B18BC2455EA4200E6E977 /* ClassSummaryView.swift in Sources */,
 				AD2B18B62455E1EE00E6E977 /* ClassCellViewModel.swift in Sources */,
 				AD2B18C82455ED9F00E6E977 /* StudentListViewModel.swift in Sources */,
+				ADCCA9A72457499C005D07AA /* SignInView.swift in Sources */,
 				AD2B18C62455EBF500E6E977 /* Student.swift in Sources */,
 				AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */,
+				ADCCA9B62457526D005D07AA /* UserData.swift in Sources */,
 				AD2B18C02455EAB300E6E977 /* ClassDetailViewModel.swift in Sources */,
 				ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */,
+				ADCCA9B82457526D005D07AA /* Keychain.swift in Sources */,
 				AD2B18BA2455EA2C00E6E977 /* ClassDetailView.swift in Sources */,
 				AD2B18C42455EBDD00E6E977 /* StudentCellViewModel.swift in Sources */,
 				AD2B18BE2455EA7B00E6E977 /* ReminderView.swift in Sources */,
@@ -411,6 +464,7 @@
 				ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */,
 				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 				AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */,
+				ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +601,7 @@
 			baseConfigurationReference = 6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Attend/Attend.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Attend/Preview Content\"";
 				DEVELOPMENT_TEAM = 7QTY74PJCK;
@@ -557,7 +612,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -569,6 +624,7 @@
 			baseConfigurationReference = 2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Attend/Attend.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Attend/Preview Content\"";
 				DEVELOPMENT_TEAM = 7QTY74PJCK;
@@ -579,7 +635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

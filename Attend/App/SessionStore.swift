@@ -9,6 +9,9 @@
 import SwiftUI
 import Firebase
 import Combine
+import FirebaseAuth
+import CryptoKit
+import AuthenticationServices
 
 class SessionStore : ObservableObject {
     var didChange = PassthroughSubject<SessionStore, Never>()
@@ -23,7 +26,8 @@ class SessionStore : ObservableObject {
                 print("Got user: \(user)")
                 self.session = User(
                     uid: user.uid,
-                    displayName: user.displayName
+                    displayName: user.displayName,
+                    email: user.email
                 )
             } else {
                 // if we don't have a user, set our session to nil
@@ -59,4 +63,11 @@ class SessionStore : ObservableObject {
             return false
         }
     }
+    
+    func unbind () {
+        if let handle = handle {
+            Auth.auth().removeStateDidChangeListener(handle)
+        }
+    }
+
 }

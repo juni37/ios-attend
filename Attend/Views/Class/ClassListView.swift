@@ -11,7 +11,7 @@ import SwiftUI
 struct ClassListView: View {
     @ObservedObject var classListViewModel = ClassListViewModel()
     @State var showModal: Bool = false
-
+    
     var classes = testDataClasses
     
     init(showModal: Bool) {
@@ -21,7 +21,7 @@ struct ClassListView: View {
         UITableView.appearance().separatorStyle = .none
         UITableView.appearance().allowsSelection = false
         UITableViewCell.appearance().selectionStyle = .none
-
+        
     }
     
     var body: some View {
@@ -37,6 +37,8 @@ struct ClassListView: View {
                             }
                         }
                     }
+                    .onDelete(perform: delete)
+                    
                 }
             }
             .navigationBarTitle("수업")
@@ -51,18 +53,21 @@ struct ClassListView: View {
             })
             
         }
-        
     }
     
-    struct ContentView_Previews: PreviewProvider {
-        @State var showModal: Bool = false
+    func delete(at offsets: IndexSet) {
+        classListViewModel.classCellViewModels.remove(atOffsets: offsets)
+    }
+}
 
-        static var previews: some View {
-            Group {
-                ClassListView(showModal: false)
-                ClassListView(showModal: false)
-                    .previewDevice("iPhone 8")
-            }
+struct ClassListView_Previews: PreviewProvider {
+    @State var showModal: Bool = false
+    
+    static var previews: some View {
+        Group {
+            ClassListView(showModal: false)
+            ClassListView(showModal: false)
+                .previewDevice("iPhone 8")
         }
     }
 }
