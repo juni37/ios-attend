@@ -12,9 +12,6 @@ import SwiftUI
 struct ClassDetailView: View {
     @ObservedObject var classDetailViewModel: ClassDetailViewModel
     
-    var classes = testDataClasses
-    
-    
     var body: some View {
         VStack {
             HStack {
@@ -26,7 +23,7 @@ struct ClassDetailView: View {
             AttendanceButton()
             
             List {
-                ForEach(testDataStudents) { student in
+                ForEach(classDetailViewModel.classCellVM.currentClass.students) { student in
                     VStack {
                         StudentSummaryView(studentCellVM: StudentCellViewModel(student: student))
                         NavigationLink(destination: StudentDetailView(studentDetailViewModel: StudentDetailViewModel(studentCellVM: StudentCellViewModel(student: student)))) {
@@ -42,8 +39,8 @@ struct ClassDetailView: View {
     }
 }
 
-struct ClassDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ClassDetailView(classDetailViewModel: ClassDetailViewModel(classCellVM: ClassCellViewModel(oclass: testDataClasses[1])))
-    }
-}
+//struct ClassDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ClassDetailView(classDetailViewModel: ClassDetailViewModel(classCellVM: ClassCellViewModel(oclass: testDataClasses[1])))
+//    }
+//}

@@ -11,9 +11,6 @@ import SwiftUI
 struct StudentListView: View {
     @ObservedObject var studentListViewModel = StudentListViewModel()
     @State var showModal: Bool = false
-
-    var students = testDataStudents
-
     
     var body: some View {
         NavigationView {

@@ -11,9 +11,7 @@ import SwiftUI
 struct ClassListView: View {
     @ObservedObject var classListViewModel = ClassListViewModel()
     @State var showModal: Bool = false
-    
-    var classes = testDataClasses
-    
+        
     init(showModal: Bool) {
         UITableView().separatorColor = UIColor.clear
         self.showModal = showModal

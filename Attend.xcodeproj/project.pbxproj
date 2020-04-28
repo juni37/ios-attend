@@ -47,7 +47,8 @@
 		ADCCA9C724581811005D07AA /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9932456F1EC005D07AA /* NanumGothicExtraBold.ttf */; };
 		ADCCA9C824581811005D07AA /* NanumGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9832456F1E8005D07AA /* NanumGothicLight.ttf */; };
 		ADCCA9CA2458191C005D07AA /* StudentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9C92458191C005D07AA /* StudentRepository.swift */; };
-		ADCCA9CC24581DBC005D07AA /* Attend.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CB24581DBC005D07AA /* Attend.swift */; };
+		ADCCA9CC24581DBC005D07AA /* Attendence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CB24581DBC005D07AA /* Attendence.swift */; };
+		ADCCA9CE245852C1005D07AA /* AttendenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
 		ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ClassListView.swift */; };
@@ -119,7 +120,8 @@
 		ADCCA9BF245806E5005D07AA /* ClassRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepository.swift; sourceTree = "<group>"; };
 		ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+.swift"; sourceTree = "<group>"; };
 		ADCCA9C92458191C005D07AA /* StudentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRepository.swift; sourceTree = "<group>"; };
-		ADCCA9CB24581DBC005D07AA /* Attend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attend.swift; sourceTree = "<group>"; };
+		ADCCA9CB24581DBC005D07AA /* Attendence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendence.swift; sourceTree = "<group>"; };
+		ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceRepository.swift; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,7 +170,7 @@
 				AD2B18C52455EBF500E6E977 /* Student.swift */,
 				ADCCA97F2456EC3C005D07AA /* UserSelection.swift */,
 				ADCCA9A3245747EC005D07AA /* OUser.swift */,
-				ADCCA9CB24581DBC005D07AA /* Attend.swift */,
+				ADCCA9CB24581DBC005D07AA /* Attendence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +293,7 @@
 			children = (
 				ADCCA9BF245806E5005D07AA /* ClassRepository.swift */,
 				ADCCA9C92458191C005D07AA /* StudentRepository.swift */,
+				ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				AD2B18C62455EBF500E6E977 /* Student.swift in Sources */,
 				AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */,
 				ADCCA9B62457526D005D07AA /* UserData.swift in Sources */,
+				ADCCA9CE245852C1005D07AA /* AttendenceRepository.swift in Sources */,
 				AD2B18C02455EAB300E6E977 /* ClassDetailViewModel.swift in Sources */,
 				ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */,
 				ADCCA9B82457526D005D07AA /* Keychain.swift in Sources */,
@@ -499,7 +503,7 @@
 				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 				AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */,
 				ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */,
-				ADCCA9CC24581DBC005D07AA /* Attend.swift in Sources */,
+				ADCCA9CC24581DBC005D07AA /* Attendence.swift in Sources */,
 				ADCCA9BD245805A5005D07AA /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

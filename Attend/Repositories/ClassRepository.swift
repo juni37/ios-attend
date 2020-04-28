@@ -25,7 +25,7 @@ protocol ClassRepository: BaseClassRepository {
 class TestDataClassRepository: BaseClassRepository, ClassRepository, ObservableObject {
     override init() {
         super.init()
-        self.classes = testDataClasses
+        self.classes = []
     }
     
     func addClass(_ oclass: Class) {

@@ -25,7 +25,7 @@ protocol StudentRepository: BaseStudentRepository {
 class TestDataStudentRepository: BaseStudentRepository, StudentRepository, ObservableObject {
     override init() {
         super.init()
-        self.students = testDataStudents
+        self.students = []
     }
     
     func addStudent(_ student: Student) {

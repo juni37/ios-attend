@@ -14,7 +14,7 @@ struct StudentDetailView: View {
     var body: some View {
         VStack {
             List {
-                ForEach(testDataClasses) { oclass in
+                ForEach(self.studentDetailViewModel.studentCellVM.student.classes) { oclass in
                     VStack {
                         ClassSummaryView(classCellVM: ClassCellViewModel(oclass: oclass))
                     }
@@ -26,9 +26,9 @@ struct StudentDetailView: View {
         
     }
 }
-
-struct StudentDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        StudentDetailView(studentDetailViewModel: StudentDetailViewModel(studentCellVM: StudentCellViewModel(student: testDataStudents[1])))
-    }
-}
+//
+//struct StudentDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StudentDetailView(studentDetailViewModel: StudentDetailViewModel(studentCellVM: StudentCellViewModel(student: testDataStudents[1])))
+//    }
+//}
