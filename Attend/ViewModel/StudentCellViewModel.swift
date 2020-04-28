@@ -9,8 +9,12 @@
 import Foundation
 import Combine
 import UIKit
+import Resolver
 
 class StudentCellViewModel : ObservableObject, Identifiable {
+    
+    @Injected var studentRepository: StudentRepository
+
     @Published var student: Student
     var id: String = ""
     
@@ -23,5 +27,14 @@ class StudentCellViewModel : ObservableObject, Identifiable {
         }
         .assign(to: \.id, on: self)
         .store(in: &cancellables)
+        
+        $student
+            .dropFirst()
+            .debounce(for: 0.8, scheduler: RunLoop.main)
+            .sink { student in
+                self.studentRepository.updateStudent(student)
+            }
+            .store(in: &cancellables)
+            
     }
 }

@@ -13,6 +13,8 @@ import Resolver
 
 class ClassCellViewModel : ObservableObject, Identifiable {
 
+    @Injected var classRepository: ClassRepository
+
     @Published var currentClass: Class
     var id: String = ""
     
@@ -25,5 +27,14 @@ class ClassCellViewModel : ObservableObject, Identifiable {
         }
         .assign(to: \.id, on: self)
         .store(in: &cancellables)
+
+        $currentClass
+        .dropFirst()
+        .debounce(for: 0.8, scheduler: RunLoop.main)
+        .sink { cclass in
+            self.classRepository.updateClass(cclass)
+        }
+        .store(in: &cancellables)
+            
     }
 }

@@ -71,14 +71,14 @@ class LocalStudentRepository: BaseStudentRepository, StudentRepository, Observab
     }
     
     private func loadData() {
-        if let retrievedStudents = try? Disk.retrieve("class.json", from: .documents, as: [Student].self) {
+        if let retrievedStudents = try? Disk.retrieve("student.json", from: .documents, as: [Student].self) {
             self.students = retrievedStudents
         }
     }
     
     private func saveData() {
         do {
-            try Disk.save(self.students, to: .documents, as: "class.json")
+            try Disk.save(self.students, to: .documents, as: "student.json")
         }
         catch let error as NSError {
             fatalError("""
