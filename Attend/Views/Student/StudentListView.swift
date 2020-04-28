@@ -20,7 +20,7 @@ struct StudentListView: View {
                     ForEach(studentListViewModel.studentCellViewModels) { studentCellVM in
                         VStack {
                             StudentSummaryView(studentCellVM: studentCellVM)
-                            NavigationLink(destination: StudentSummaryView(studentCellVM: studentCellVM)) {
+                            NavigationLink(destination: StudentDetailView(studentDetailViewModel: StudentDetailViewModel(studentCellVM: studentCellVM))) {
                                 EmptyView().frame(width: 0, height: 0, alignment: .center)
                             }
                         }

@@ -20,5 +20,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13A86FDA-8C81-4422-A7FB-BCF402520A98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Attend/Views/Class/ClassDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "13A86FDA-8C81-4422-A7FB-BCF402520A98 - c9686f52727a7a5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Attend.Student&gt;, Swift.String, SwiftUI.VStack&lt;Attend.StudentSummaryView&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, Attend.AttendanceButton, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Attend.Student&gt;, Swift.String, SwiftUI.VStack&lt;Attend.StudentSummaryView&gt;&gt;&gt;)&gt; in Attend.ClassDetailView.body.getter : some"
+                  moduleName = "Attend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/Desktop/demo_repo/Attend/Attend/Views/Class/ClassDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "13A86FDA-8C81-4422-A7FB-BCF402520A98 - 6f940a094ffb584e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Attend.Student) -&gt; SwiftUI.VStack&lt;Attend.StudentSummaryView&gt; in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Attend.Student&gt;, Swift.String, SwiftUI.VStack&lt;Attend.StudentSummaryView&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, Attend.AttendanceButton, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Attend.Student&gt;, Swift.String, SwiftUI.VStack&lt;Attend.StudentSummaryView&gt;&gt;&gt;)&gt; in Attend.ClassDetailView.body.getter : some"
+                  moduleName = "Attend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/Desktop/demo_repo/Attend/Attend/Views/Class/ClassDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

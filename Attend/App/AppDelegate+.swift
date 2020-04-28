@@ -15,6 +15,7 @@ extension Resolver: ResolverRegistering {
     register { AuthenticationService() }.scope(application)
     register { LocalClassRepository() as ClassRepository }.scope(application)
     register { LocalStudentRepository() as StudentRepository }.scope(application)
+    register { LocalAttendanceRepository() as AttendanceRepository }.scope(application)
 
   }
 }

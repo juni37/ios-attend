@@ -13,7 +13,7 @@ struct Student: Codable, Identifiable {
     var id: String = UUID().uuidString
     var name: String
     var classes: [Class]
-    var attendance: [Attendence]
+    var attendance: [Attendance]
 }
 //
 //#if DEBUG

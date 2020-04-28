@@ -41,7 +41,11 @@ struct AddStudentView: View {
                 if self.studentListVM.classRepository.classes.count <= self.selection {
                     self.studentListVM.addStudent(student: Student(id: UUID().uuidString, name: self.studentName, classes: [], attendance: []))
                 } else {
-                    self.studentListVM.addStudent(student: Student(id: UUID().uuidString, name: self.studentName, classes: [self.studentListVM.classRepository.classes[self.selection]], attendance: []))
+                    var newStudent: Student = Student(id: UUID().uuidString, name: self.studentName, classes: [self.studentListVM.classRepository.classes[self.selection]], attendance: [])
+                    self.studentListVM.addStudent(student: newStudent)
+                    var currentClass: Class = self.studentListVM.classRepository.classes[self.selection]
+                    currentClass.students.append(newStudent)
+                    self.studentListVM.classRepository.updateClass(currentClass)
                 }
                 self.showModal.toggle()
             }) {

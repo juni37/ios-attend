@@ -21,6 +21,24 @@ struct TextButton: View {
     }
 }
 
+struct ChangeAttendanceButton: View {
+    @State var buttonTitle : String
+    @State var buttonColor : Color
+    @State var status: Status
+    @ObservedObject var studentCellVM: StudentCellViewModel
+    
+    
+    var body: some View {
+        Button(action: {
+            self.studentCellVM.attendanceRepository.addAttendance(Attendance(student: self.studentCellVM.student, attendedClass: self.studentCellVM.student.classes[0], date: Date(), status: self.status))
+        }) {
+            Text(buttonTitle)
+            .bold()
+        }.buttonStyle(RequestButtonStyle(buttonColor: buttonColor))
+    }
+}
+
+
 struct RequestButtonStyle: ButtonStyle {
     @State var buttonColor : Color
 

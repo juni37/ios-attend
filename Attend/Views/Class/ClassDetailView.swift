@@ -20,15 +20,11 @@ struct ClassDetailView: View {
                 Text("학생수 : " + String(classDetailViewModel.classCellVM.currentClass.students.count))
                 
             }.padding()
-            AttendanceButton()
             
             List {
                 ForEach(classDetailViewModel.classCellVM.currentClass.students) { student in
                     VStack {
-                        StudentSummaryView(studentCellVM: StudentCellViewModel(student: student))
-                        NavigationLink(destination: StudentDetailView(studentDetailViewModel: StudentDetailViewModel(studentCellVM: StudentCellViewModel(student: student)))) {
-                            EmptyView().frame(width: 0, height: 0, alignment: .center)
-                        }
+                        StudentAttendanceView(studentCellVM: StudentCellViewModel(student: student))
                     }
                 }
                 

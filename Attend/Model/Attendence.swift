@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum Status: String, Codable {
+enum Status: String, Codable, CaseIterable {
     case 출석
     case 결석
     case 지각
     case 조퇴
 }
 
-struct Attendence: Codable, Identifiable {
+struct Attendance: Codable, Identifiable {
     var id: String = UUID().uuidString
     var student: Student
     var attendedClass: Class
@@ -25,7 +25,7 @@ struct Attendence: Codable, Identifiable {
 
 #if DEBUG
 var testDataAttend = [
-    Attendence(id: UUID().uuidString, student: Student(id: "", name: "", classes: [], attendance: []), attendedClass: Class(id: "", name: "", time: "", students: []), date: Date(), status: Status.출석),
-    Attendence(id: UUID().uuidString, student: Student(id: "", name: "", classes: [], attendance: []), attendedClass: Class(id: "", name: "", time: "", students: []), date: Date(), status: Status.출석)
+    Attendance(id: UUID().uuidString, student: Student(id: "", name: "", classes: [], attendance: []), attendedClass: Class(id: "", name: "", time: "", students: []), date: Date(), status: Status.출석),
+    Attendance(id: UUID().uuidString, student: Student(id: "", name: "", classes: [], attendance: []), attendedClass: Class(id: "", name: "", time: "", students: []), date: Date(), status: Status.출석)
 ]
 #endif

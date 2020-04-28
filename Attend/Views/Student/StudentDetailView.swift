@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import Combine
+import Resolver
 
 struct StudentDetailView: View {
     @ObservedObject var studentDetailViewModel: StudentDetailViewModel
@@ -19,6 +21,12 @@ struct StudentDetailView: View {
                         ClassSummaryView(classCellVM: ClassCellViewModel(oclass: oclass))
                     }
                 }
+                ForEach(self.studentDetailViewModel.attendanceCellViewModels) { attendanceVM in
+                    VStack {
+                        AttendanceSummaryView(attendanceCellVM: attendanceVM)
+                    }
+                }
+
                 
             }
         }

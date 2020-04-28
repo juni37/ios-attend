@@ -49,6 +49,11 @@
 		ADCCA9CA2458191C005D07AA /* StudentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9C92458191C005D07AA /* StudentRepository.swift */; };
 		ADCCA9CC24581DBC005D07AA /* Attendence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CB24581DBC005D07AA /* Attendence.swift */; };
 		ADCCA9CE245852C1005D07AA /* AttendenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */; };
+		ADCCA9D1245855D7005D07AA /* AttendanceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D0245855D7005D07AA /* AttendanceListView.swift */; };
+		ADCCA9D324585651005D07AA /* AttendanceSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */; };
+		ADCCA9D524585667005D07AA /* AttendanceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D424585667005D07AA /* AttendanceListViewModel.swift */; };
+		ADCCA9D7245856BB005D07AA /* AttendanceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D6245856BB005D07AA /* AttendanceCellViewModel.swift */; };
+		ADCCA9D9245862BE005D07AA /* StudentAttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D8245862BE005D07AA /* StudentAttendanceView.swift */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
 		ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ClassListView.swift */; };
@@ -122,6 +127,11 @@
 		ADCCA9C92458191C005D07AA /* StudentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRepository.swift; sourceTree = "<group>"; };
 		ADCCA9CB24581DBC005D07AA /* Attendence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendence.swift; sourceTree = "<group>"; };
 		ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceRepository.swift; sourceTree = "<group>"; };
+		ADCCA9D0245855D7005D07AA /* AttendanceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceListView.swift; sourceTree = "<group>"; };
+		ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceSummaryView.swift; sourceTree = "<group>"; };
+		ADCCA9D424585667005D07AA /* AttendanceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceListViewModel.swift; sourceTree = "<group>"; };
+		ADCCA9D6245856BB005D07AA /* AttendanceCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCellViewModel.swift; sourceTree = "<group>"; };
+		ADCCA9D8245862BE005D07AA /* StudentAttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttendanceView.swift; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +200,7 @@
 		AD2B18B32455CB7B00E6E977 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCA9CF2458558C005D07AA /* Attendence */,
 				ADCCA9A52457498F005D07AA /* Auth */,
 				ADCCA9992456F70C005D07AA /* ContentView.swift */,
 				ADCCA99B24573C09005D07AA /* Class */,
@@ -210,6 +221,8 @@
 				AD2B18C32455EBDD00E6E977 /* StudentCellViewModel.swift */,
 				AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */,
 				AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */,
+				ADCCA9D424585667005D07AA /* AttendanceListViewModel.swift */,
+				ADCCA9D6245856BB005D07AA /* AttendanceCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +275,7 @@
 				AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */,
 				ADCCA99D24573C38005D07AA /* StudentListView.swift */,
 				ADCCA99F24574597005D07AA /* AddStudentView.swift */,
+				ADCCA9D8245862BE005D07AA /* StudentAttendanceView.swift */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -296,6 +310,15 @@
 				ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ADCCA9CF2458558C005D07AA /* Attendence */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9D0245855D7005D07AA /* AttendanceListView.swift */,
+				ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */,
+			);
+			path = Attendence;
 			sourceTree = "<group>";
 		};
 		ADEAEA3F245541E600A0CB4B = {
@@ -488,6 +511,7 @@
 				ADCCA9A72457499C005D07AA /* SignInView.swift in Sources */,
 				AD2B18C62455EBF500E6E977 /* Student.swift in Sources */,
 				AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */,
+				ADCCA9D9245862BE005D07AA /* StudentAttendanceView.swift in Sources */,
 				ADCCA9B62457526D005D07AA /* UserData.swift in Sources */,
 				ADCCA9CE245852C1005D07AA /* AttendenceRepository.swift in Sources */,
 				AD2B18C02455EAB300E6E977 /* ClassDetailViewModel.swift in Sources */,
@@ -497,14 +521,18 @@
 				AD2B18C42455EBDD00E6E977 /* StudentCellViewModel.swift in Sources */,
 				AD2B18BE2455EA7B00E6E977 /* ReminderView.swift in Sources */,
 				AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */,
+				ADCCA9D324585651005D07AA /* AttendanceSummaryView.swift in Sources */,
 				AD2B18CC2455F3EF00E6E977 /* StudentDetailViewModel.swift in Sources */,
+				ADCCA9D1245855D7005D07AA /* AttendanceListView.swift in Sources */,
 				AD2B18B82455E3F700E6E977 /* ClassListViewModel.swift in Sources */,
+				ADCCA9D524585667005D07AA /* AttendanceListViewModel.swift in Sources */,
 				ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */,
 				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
 				AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */,
 				ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */,
 				ADCCA9CC24581DBC005D07AA /* Attendence.swift in Sources */,
 				ADCCA9BD245805A5005D07AA /* AuthenticationService.swift in Sources */,
+				ADCCA9D7245856BB005D07AA /* AttendanceCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

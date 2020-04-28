@@ -1,5 +1,5 @@
 //
-//  AttendenceRepository.swift
+//  AttendanceRepository.swift
 //  Attend
 //
 //  Created by David Yoon on 4/28/20.
@@ -12,73 +12,73 @@ import Firebase
 import Combine
 import Resolver
 
-class BaseAttendenceRepository {
-    @Published var attendences = [Attendence]()
+class BaseAttendanceRepository {
+    @Published var attendances = [Attendance]()
 }
 
-protocol AttendenceRepository: BaseAttendenceRepository {
-    func addAttendence(_ attendence: Attendence)
-    func removeAttendence(_ attendence: Attendence)
-    func updateAttendence(_ attendence: Attendence)
+protocol AttendanceRepository: BaseAttendanceRepository {
+    func addAttendance(_ attendance: Attendance)
+    func removeAttendance(_ attendance: Attendance)
+    func updateAttendance(_ attendance: Attendance)
 }
 
-class TestDataAttendenceRepository: BaseAttendenceRepository, AttendenceRepository, ObservableObject {
+class TestDataAttendanceRepository: BaseAttendanceRepository, AttendanceRepository, ObservableObject {
     override init() {
         super.init()
-        self.attendences = []
+        self.attendances = []
     }
     
-    func addAttendence(_ attendence: Attendence) {
-        attendences.append(attendence)
+    func addAttendance(_ attendance: Attendance) {
+        attendances.append(attendance)
     }
     
-    func removeAttendence(_ attendence: Attendence) {
-        if let index = attendences.firstIndex(where: { $0.id == attendence.id }) {
-            attendences.remove(at: index)
+    func removeAttendance(_ attendance: Attendance) {
+        if let index = attendances.firstIndex(where: { $0.id == attendance.id }) {
+            attendances.remove(at: index)
         }
     }
     
-    func updateAttendence(_ attendence: Attendence) {
-        if let index = self.attendences.firstIndex(where: { $0.id == attendence.id } ) {
-            self.attendences[index] = attendence
+    func updateAttendance(_ attendance: Attendance) {
+        if let index = self.attendances.firstIndex(where: { $0.id == attendance.id } ) {
+            self.attendances[index] = attendance
         }
     }
 }
 
-class LocalAttendenceRepository: BaseAttendenceRepository, AttendenceRepository, ObservableObject {
+class LocalAttendanceRepository: BaseAttendanceRepository, AttendanceRepository, ObservableObject {
     override init() {
         super.init()
         loadData()
     }
     
-    func addAttendence(_ attendence: Attendence) {
-        self.attendences.append(attendence)
+    func addAttendance(_ attendance: Attendance) {
+        self.attendances.append(attendance)
         saveData()
     }
     
-    func removeAttendence(_ attendence: Attendence) {
-        if let index = attendences.firstIndex(where: { $0.id == attendence.id }) {
-            attendences.remove(at: index)
+    func removeAttendance(_ attendance: Attendance) {
+        if let index = attendances.firstIndex(where: { $0.id == attendance.id }) {
+            attendances.remove(at: index)
             saveData()
         }
     }
     
-    func updateAttendence(_ attendence: Attendence) {
-        if let index = self.attendences.firstIndex(where: { $0.id == attendence.id } ) {
-            self.attendences[index] = attendence
+    func updateAttendance(_ attendance: Attendance) {
+        if let index = self.attendances.firstIndex(where: { $0.id == attendance.id } ) {
+            self.attendances[index] = attendance
             saveData()
         }
     }
     
     private func loadData() {
-        if let retrievedAttendences = try? Disk.retrieve("attendence.json", from: .documents, as: [Attendence].self) {
-            self.attendences = retrievedAttendences
+        if let retrievedAttendances = try? Disk.retrieve("attendance.json", from: .documents, as: [Attendance].self) {
+            self.attendances = retrievedAttendances
         }
     }
     
     private func saveData() {
         do {
-            try Disk.save(self.attendences, to: .documents, as: "attendence.json")
+            try Disk.save(self.attendances, to: .documents, as: "attendance.json")
         }
         catch let error as NSError {
             fatalError("""

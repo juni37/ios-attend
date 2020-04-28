@@ -14,6 +14,7 @@ import Resolver
 class StudentCellViewModel : ObservableObject, Identifiable {
     
     @Injected var studentRepository: StudentRepository
+    @Injected var attendanceRepository: AttendanceRepository
 
     @Published var student: Student
     var id: String = ""
@@ -36,5 +37,9 @@ class StudentCellViewModel : ObservableObject, Identifiable {
             }
             .store(in: &cancellables)
             
+    }
+    
+    func addAttendance(status: Status) {
+        attendanceRepository.addAttendance(Attendance(student: student, attendedClass: student.classes[0], date: Date(), status: status))
     }
 }
