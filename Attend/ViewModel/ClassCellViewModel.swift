@@ -8,9 +8,11 @@
 
 import Foundation
 import Combine
-import UIKit
+import Resolver
+
 
 class ClassCellViewModel : ObservableObject, Identifiable {
+
     @Published var currentClass: Class
     var id: String = ""
     

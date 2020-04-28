@@ -22,7 +22,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if (loggedin) {
+            if (!loggedin) {
                 TabView(selection: $selection){
                     ClassListView(showModal: false)
                         .tabItem {
