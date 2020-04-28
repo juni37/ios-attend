@@ -15,12 +15,17 @@ class AttendanceCellViewModel : ObservableObject, Identifiable {
     
     @Injected var attendanceRepository: AttendanceRepository
 
+    var dateFormatter:DateFormatter
+
     @Published var attendance: Attendance
     var id: String = ""
     
     private var cancellables = Set<AnyCancellable>()
     init(attendance: Attendance) {
         self.attendance = attendance
+        dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_KR")
+        dateFormatter.dateFormat = "yyyy년 MM월 dd일 HH시 mm분"
         
         $attendance.map { attendance in
             attendance.id
@@ -36,5 +41,9 @@ class AttendanceCellViewModel : ObservableObject, Identifiable {
             }
             .store(in: &cancellables)
             
+    }
+    func returnDate() -> String {
+        return dateFormatter.string(from: attendance.date)
+        //(with: Locale(identifier: "ko_KR")
     }
 }

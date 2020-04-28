@@ -205,9 +205,7 @@
 				ADCCA9992456F70C005D07AA /* ContentView.swift */,
 				ADCCA99B24573C09005D07AA /* Class */,
 				ADCCA99C24573C19005D07AA /* Student */,
-				AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */,
-				ADCCA9792456E843005D07AA /* AttendanceButton.swift */,
-				ADCCA97B2456E8AA005D07AA /* TextButton.swift */,
+				ADD63ECF24588B6D0027FD21 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +317,16 @@
 				ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */,
 			);
 			path = Attendence;
+			sourceTree = "<group>";
+		};
+		ADD63ECF24588B6D0027FD21 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */,
+				ADCCA9792456E843005D07AA /* AttendanceButton.swift */,
+				ADCCA97B2456E8AA005D07AA /* TextButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		ADEAEA3F245541E600A0CB4B = {

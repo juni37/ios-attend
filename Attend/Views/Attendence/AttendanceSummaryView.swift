@@ -14,7 +14,8 @@ struct AttendanceSummaryView: View {
     
     var body: some View {
         HStack {
-            Text(attendanceCellVM.attendance.date.description)
+            Text(
+                self.attendanceCellVM.returnDate())
                 .font(.body)
                 .bold()
             Spacer()

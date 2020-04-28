@@ -22,11 +22,7 @@ struct StudentAttendanceView: View {
             Group {
                 if studentCellVM.student.classes.count > 0 {
                     VStack{
-                        ForEach (0 ..< Status.allCases.count) {
-                            ChangeAttendanceButton(buttonTitle: self.studentCellVM.student.attendance.last?.status.rawValue ?? "출결 필요", buttonColor: Color.black.opacity(0.03), status: Status.allCases[$0], studentCellVM: self.studentCellVM)
-                        }
                         AttendanceButton(studentCellVM: self.studentCellVM)
-
                     }
                                             
                 } else {
