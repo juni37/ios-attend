@@ -3,13 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BF3978FD797E54BE6D3E526 /* Pods_Attend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCD9892749BCCB2A4204EF0 /* Pods_Attend.framework */; };
+		AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B02455CAEA00E6E977 /* Class.swift */; };
+		AD2B18B62455E1EE00E6E977 /* ClassCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B52455E1EE00E6E977 /* ClassCellViewModel.swift */; };
+		AD2B18B82455E3F700E6E977 /* ClassListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B72455E3F700E6E977 /* ClassListViewModel.swift */; };
+		AD2B18BA2455EA2C00E6E977 /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18B92455EA2C00E6E977 /* ClassDetailView.swift */; };
+		AD2B18BC2455EA4200E6E977 /* ClassSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18BB2455EA4200E6E977 /* ClassSummaryView.swift */; };
+		AD2B18BE2455EA7B00E6E977 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */; };
+		AD2B18C02455EAB300E6E977 /* ClassDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18BF2455EAB300E6E977 /* ClassDetailViewModel.swift */; };
+		AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */; };
+		AD2B18C42455EBDD00E6E977 /* StudentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C32455EBDD00E6E977 /* StudentCellViewModel.swift */; };
+		AD2B18C62455EBF500E6E977 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C52455EBF500E6E977 /* Student.swift */; };
+		AD2B18C82455ED9F00E6E977 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */; };
+		AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */; };
+		AD2B18CC2455F3EF00E6E977 /* StudentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */; };
+		ADCCA97A2456E843005D07AA /* AttendanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9792456E843005D07AA /* AttendanceButton.swift */; };
+		ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97B2456E8AA005D07AA /* TextButton.swift */; };
+		ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA97F2456EC3C005D07AA /* UserSelection.swift */; };
+		ADCCA99A2456F70C005D07AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9992456F70C005D07AA /* ContentView.swift */; };
+		ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99D24573C38005D07AA /* StudentListView.swift */; };
+		ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA99F24574597005D07AA /* AddStudentView.swift */; };
+		ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A1245746B0005D07AA /* SessionStore.swift */; };
+		ADCCA9A4245747EC005D07AA /* OUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A3245747EC005D07AA /* OUser.swift */; };
+		ADCCA9A72457499C005D07AA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A62457499C005D07AA /* SignInView.swift */; };
+		ADCCA9A9245749F5005D07AA /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9A8245749F5005D07AA /* AuthView.swift */; };
+		ADCCA9AC24574DA3005D07AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */; };
+		ADCCA9AE24575023005D07AA /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9AD24575023005D07AA /* SignInWithApple.swift */; };
+		ADCCA9B02457522C005D07AA /* SignInWithAppleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9AF2457522C005D07AA /* SignInWithAppleDelegates.swift */; };
+		ADCCA9B62457526D005D07AA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B22457526D005D07AA /* UserData.swift */; };
+		ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B32457526D005D07AA /* UserDataKeychain.swift */; };
+		ADCCA9B82457526D005D07AA /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B42457526D005D07AA /* Keychain.swift */; };
+		ADCCA9B92457526D005D07AA /* SharedWebCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */; };
+		ADCCA9BB245753F4005D07AA /* EnvironmentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */; };
+		ADCCA9BD245805A5005D07AA /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BC245805A5005D07AA /* AuthenticationService.swift */; };
+		ADCCA9C0245806E5005D07AA /* ClassRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9BF245806E5005D07AA /* ClassRepository.swift */; };
+		ADCCA9C224580BD8005D07AA /* AppDelegate+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */; };
+		ADCCA9C524581811005D07AA /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA98B2456F1EA005D07AA /* NanumGothic.ttf */; };
+		ADCCA9C624581811005D07AA /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9902456F1EB005D07AA /* NanumGothicBold.ttf */; };
+		ADCCA9C724581811005D07AA /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9932456F1EC005D07AA /* NanumGothicExtraBold.ttf */; };
+		ADCCA9C824581811005D07AA /* NanumGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCCA9832456F1E8005D07AA /* NanumGothicLight.ttf */; };
+		ADCCA9CA2458191C005D07AA /* StudentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9C92458191C005D07AA /* StudentRepository.swift */; };
+		ADCCA9CC24581DBC005D07AA /* Attendence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CB24581DBC005D07AA /* Attendence.swift */; };
+		ADCCA9CE245852C1005D07AA /* AttendenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */; };
+		ADCCA9D1245855D7005D07AA /* AttendanceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D0245855D7005D07AA /* AttendanceListView.swift */; };
+		ADCCA9D324585651005D07AA /* AttendanceSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */; };
+		ADCCA9D524585667005D07AA /* AttendanceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D424585667005D07AA /* AttendanceListViewModel.swift */; };
+		ADCCA9D7245856BB005D07AA /* AttendanceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D6245856BB005D07AA /* AttendanceCellViewModel.swift */; };
+		ADCCA9D9245862BE005D07AA /* StudentAttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCA9D8245862BE005D07AA /* StudentAttendanceView.swift */; };
 		ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */; };
 		ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */; };
-		ADEAEA50245541E600A0CB4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ContentView.swift */; };
+		ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAEA4F245541E600A0CB4B /* ClassListView.swift */; };
 		ADEAEA52245541E800A0CB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA51245541E800A0CB4B /* Assets.xcassets */; };
 		ADEAEA55245541E800A0CB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA54245541E800A0CB4B /* Preview Assets.xcassets */; };
 		ADEAEA58245541E800A0CB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA56245541E800A0CB4B /* LaunchScreen.storyboard */; };
@@ -17,15 +64,84 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attend.release.xcconfig"; path = "Target Support Files/Pods-Attend/Pods-Attend.release.xcconfig"; sourceTree = "<group>"; };
+		6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attend.debug.xcconfig"; path = "Target Support Files/Pods-Attend/Pods-Attend.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2B18B02455CAEA00E6E977 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		AD2B18B52455E1EE00E6E977 /* ClassCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCellViewModel.swift; sourceTree = "<group>"; };
+		AD2B18B72455E3F700E6E977 /* ClassListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewModel.swift; sourceTree = "<group>"; };
+		AD2B18B92455EA2C00E6E977 /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
+		AD2B18BB2455EA4200E6E977 /* ClassSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSummaryView.swift; sourceTree = "<group>"; };
+		AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		AD2B18BF2455EAB300E6E977 /* ClassDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewModel.swift; sourceTree = "<group>"; };
+		AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSummaryView.swift; sourceTree = "<group>"; };
+		AD2B18C32455EBDD00E6E977 /* StudentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCellViewModel.swift; sourceTree = "<group>"; };
+		AD2B18C52455EBF500E6E977 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
+		AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewModel.swift; sourceTree = "<group>"; };
+		ADCCA9792456E843005D07AA /* AttendanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceButton.swift; sourceTree = "<group>"; };
+		ADCCA97B2456E8AA005D07AA /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		ADCCA97F2456EC3C005D07AA /* UserSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelection.swift; sourceTree = "<group>"; };
+		ADCCA9822456F1E7005D07AA /* NanumMyeongjoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoBold.ttf; sourceTree = "<group>"; };
+		ADCCA9832456F1E8005D07AA /* NanumGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicLight.ttf; sourceTree = "<group>"; };
+		ADCCA9842456F1E8005D07AA /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
+		ADCCA9852456F1E8005D07AA /* NanumBarunpenRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenRegular.ttf; sourceTree = "<group>"; };
+		ADCCA9862456F1E8005D07AA /* NanumSquareExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareExtraBold.ttf; sourceTree = "<group>"; };
+		ADCCA9872456F1E8005D07AA /* NanumBrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBrush.ttf; sourceTree = "<group>"; };
+		ADCCA9882456F1E9005D07AA /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothic.ttf; sourceTree = "<group>"; };
+		ADCCA9892456F1E9005D07AA /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
+		ADCCA98A2456F1E9005D07AA /* NanumBarunGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicLight.ttf; sourceTree = "<group>"; };
+		ADCCA98B2456F1EA005D07AA /* NanumGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.ttf; sourceTree = "<group>"; };
+		ADCCA98C2456F1EA005D07AA /* NanumMyeongjoExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoExtraBold.ttf; sourceTree = "<group>"; };
+		ADCCA98D2456F1EA005D07AA /* NanumSquareBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareBold.ttf; sourceTree = "<group>"; };
+		ADCCA98E2456F1EB005D07AA /* NanumPen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumPen.ttf; sourceTree = "<group>"; };
+		ADCCA98F2456F1EB005D07AA /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
+		ADCCA9902456F1EB005D07AA /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		ADCCA9912456F1EC005D07AA /* NanumBarunpenBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenBold.ttf; sourceTree = "<group>"; };
+		ADCCA9922456F1EC005D07AA /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
+		ADCCA9932456F1EC005D07AA /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
+		ADCCA9942456F1EC005D07AA /* NanumSquareLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareLight.ttf; sourceTree = "<group>"; };
+		ADCCA9952456F1ED005D07AA /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundL.ttf; sourceTree = "<group>"; };
+		ADCCA9962456F1ED005D07AA /* NanumBarunGothicUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicUltraLight.ttf; sourceTree = "<group>"; };
+		ADCCA9972456F1ED005D07AA /* NanumMyeongjo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjo.ttf; sourceTree = "<group>"; };
+		ADCCA9982456F1ED005D07AA /* NanumSquareRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRegular.ttf; sourceTree = "<group>"; };
+		ADCCA9992456F70C005D07AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADCCA99D24573C38005D07AA /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		ADCCA99F24574597005D07AA /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
+		ADCCA9A1245746B0005D07AA /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		ADCCA9A3245747EC005D07AA /* OUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUser.swift; sourceTree = "<group>"; };
+		ADCCA9A62457499C005D07AA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		ADCCA9A8245749F5005D07AA /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		ADCCA9AA24574C7C005D07AA /* Attend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Attend.entitlements; sourceTree = "<group>"; };
+		ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADCCA9AD24575023005D07AA /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
+		ADCCA9AF2457522C005D07AA /* SignInWithAppleDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegates.swift; sourceTree = "<group>"; };
+		ADCCA9B22457526D005D07AA /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		ADCCA9B32457526D005D07AA /* UserDataKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataKeychain.swift; sourceTree = "<group>"; };
+		ADCCA9B42457526D005D07AA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedWebCredential.swift; sourceTree = "<group>"; };
+		ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentWindowKey.swift; sourceTree = "<group>"; };
+		ADCCA9BC245805A5005D07AA /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		ADCCA9BF245806E5005D07AA /* ClassRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepository.swift; sourceTree = "<group>"; };
+		ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+.swift"; sourceTree = "<group>"; };
+		ADCCA9C92458191C005D07AA /* StudentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRepository.swift; sourceTree = "<group>"; };
+		ADCCA9CB24581DBC005D07AA /* Attendence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendence.swift; sourceTree = "<group>"; };
+		ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceRepository.swift; sourceTree = "<group>"; };
+		ADCCA9D0245855D7005D07AA /* AttendanceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceListView.swift; sourceTree = "<group>"; };
+		ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceSummaryView.swift; sourceTree = "<group>"; };
+		ADCCA9D424585667005D07AA /* AttendanceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceListViewModel.swift; sourceTree = "<group>"; };
+		ADCCA9D6245856BB005D07AA /* AttendanceCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCellViewModel.swift; sourceTree = "<group>"; };
+		ADCCA9D8245862BE005D07AA /* StudentAttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttendanceView.swift; sourceTree = "<group>"; };
 		ADEAEA48245541E600A0CB4B /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADEAEA4F245541E600A0CB4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADEAEA4F245541E600A0CB4B /* ClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListView.swift; sourceTree = "<group>"; };
 		ADEAEA51245541E800A0CB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADEAEA54245541E800A0CB4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADEAEA57245541E800A0CB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADEAEA59245541E800A0CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassesView.swift; sourceTree = "<group>"; };
+		DBCD9892749BCCB2A4204EF0 /* Pods_Attend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +149,193 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF3978FD797E54BE6D3E526 /* Pods_Attend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CCEF8795CFA87ED4119712C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */,
+				2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FDA2DFC967FDC2B66ACD0DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCD9892749BCCB2A4204EF0 /* Pods_Attend.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD2B18AF2455CADE00E6E977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18B02455CAEA00E6E977 /* Class.swift */,
+				AD2B18C52455EBF500E6E977 /* Student.swift */,
+				ADCCA97F2456EC3C005D07AA /* UserSelection.swift */,
+				ADCCA9A3245747EC005D07AA /* OUser.swift */,
+				ADCCA9CB24581DBC005D07AA /* Attendence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2B18B22455CB7500E6E977 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */,
+				ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */,
+				ADCCA9A1245746B0005D07AA /* SessionStore.swift */,
+				ADCCA9BC245805A5005D07AA /* AuthenticationService.swift */,
+				ADCCA9C124580BD8005D07AA /* AppDelegate+.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD2B18B32455CB7B00E6E977 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9CF2458558C005D07AA /* Attendence */,
+				ADCCA9A52457498F005D07AA /* Auth */,
+				ADCCA9992456F70C005D07AA /* ContentView.swift */,
+				ADCCA99B24573C09005D07AA /* Class */,
+				ADCCA99C24573C19005D07AA /* Student */,
+				ADD63ECF24588B6D0027FD21 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD2B18B42455E1DB00E6E977 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18B52455E1EE00E6E977 /* ClassCellViewModel.swift */,
+				AD2B18B72455E3F700E6E977 /* ClassListViewModel.swift */,
+				AD2B18BF2455EAB300E6E977 /* ClassDetailViewModel.swift */,
+				AD2B18C32455EBDD00E6E977 /* StudentCellViewModel.swift */,
+				AD2B18C72455ED9F00E6E977 /* StudentListViewModel.swift */,
+				AD2B18CB2455F3EF00E6E977 /* StudentDetailViewModel.swift */,
+				ADCCA9D424585667005D07AA /* AttendanceListViewModel.swift */,
+				ADCCA9D6245856BB005D07AA /* AttendanceCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADCCA9812456F0D1005D07AA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9882456F1E9005D07AA /* NanumBarunGothic.ttf */,
+				ADCCA9842456F1E8005D07AA /* NanumBarunGothicBold.ttf */,
+				ADCCA98A2456F1E9005D07AA /* NanumBarunGothicLight.ttf */,
+				ADCCA9962456F1ED005D07AA /* NanumBarunGothicUltraLight.ttf */,
+				ADCCA9912456F1EC005D07AA /* NanumBarunpenBold.ttf */,
+				ADCCA9852456F1E8005D07AA /* NanumBarunpenRegular.ttf */,
+				ADCCA9872456F1E8005D07AA /* NanumBrush.ttf */,
+				ADCCA98B2456F1EA005D07AA /* NanumGothic.ttf */,
+				ADCCA9902456F1EB005D07AA /* NanumGothicBold.ttf */,
+				ADCCA9932456F1EC005D07AA /* NanumGothicExtraBold.ttf */,
+				ADCCA9832456F1E8005D07AA /* NanumGothicLight.ttf */,
+				ADCCA9972456F1ED005D07AA /* NanumMyeongjo.ttf */,
+				ADCCA9822456F1E7005D07AA /* NanumMyeongjoBold.ttf */,
+				ADCCA98C2456F1EA005D07AA /* NanumMyeongjoExtraBold.ttf */,
+				ADCCA98E2456F1EB005D07AA /* NanumPen.ttf */,
+				ADCCA98D2456F1EA005D07AA /* NanumSquareBold.ttf */,
+				ADCCA9862456F1E8005D07AA /* NanumSquareExtraBold.ttf */,
+				ADCCA9942456F1EC005D07AA /* NanumSquareLight.ttf */,
+				ADCCA9982456F1ED005D07AA /* NanumSquareRegular.ttf */,
+				ADCCA98F2456F1EB005D07AA /* NanumSquareRoundB.ttf */,
+				ADCCA9922456F1EC005D07AA /* NanumSquareRoundEB.ttf */,
+				ADCCA9952456F1ED005D07AA /* NanumSquareRoundL.ttf */,
+				ADCCA9892456F1E9005D07AA /* NanumSquareRoundR.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		ADCCA99B24573C09005D07AA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAEA4F245541E600A0CB4B /* ClassListView.swift */,
+				AD2B18B92455EA2C00E6E977 /* ClassDetailView.swift */,
+				AD2B18BB2455EA4200E6E977 /* ClassSummaryView.swift */,
+				ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		ADCCA99C24573C19005D07AA /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18C92455F3A900E6E977 /* StudentDetailView.swift */,
+				AD2B18C12455EBA300E6E977 /* StudentSummaryView.swift */,
+				ADCCA99D24573C38005D07AA /* StudentListView.swift */,
+				ADCCA99F24574597005D07AA /* AddStudentView.swift */,
+				ADCCA9D8245862BE005D07AA /* StudentAttendanceView.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		ADCCA9A52457498F005D07AA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9A62457499C005D07AA /* SignInView.swift */,
+				ADCCA9A8245749F5005D07AA /* AuthView.swift */,
+				ADCCA9AD24575023005D07AA /* SignInWithApple.swift */,
+				ADCCA9AF2457522C005D07AA /* SignInWithAppleDelegates.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		ADCCA9B12457526D005D07AA /* CredentialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9B22457526D005D07AA /* UserData.swift */,
+				ADCCA9B32457526D005D07AA /* UserDataKeychain.swift */,
+				ADCCA9B42457526D005D07AA /* Keychain.swift */,
+				ADCCA9B52457526D005D07AA /* SharedWebCredential.swift */,
+			);
+			path = CredentialStorage;
+			sourceTree = "<group>";
+		};
+		ADCCA9BE245806D1005D07AA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9BF245806E5005D07AA /* ClassRepository.swift */,
+				ADCCA9C92458191C005D07AA /* StudentRepository.swift */,
+				ADCCA9CD245852C1005D07AA /* AttendenceRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ADCCA9CF2458558C005D07AA /* Attendence */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCA9D0245855D7005D07AA /* AttendanceListView.swift */,
+				ADCCA9D224585651005D07AA /* AttendanceSummaryView.swift */,
+			);
+			path = Attendence;
+			sourceTree = "<group>";
+		};
+		ADD63ECF24588B6D0027FD21 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B18BD2455EA7B00E6E977 /* ReminderView.swift */,
+				ADCCA9792456E843005D07AA /* AttendanceButton.swift */,
+				ADCCA97B2456E8AA005D07AA /* TextButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		ADEAEA3F245541E600A0CB4B = {
 			isa = PBXGroup;
 			children = (
 				ADEAEA4A245541E600A0CB4B /* Attend */,
 				ADEAEA49245541E600A0CB4B /* Products */,
+				7CCEF8795CFA87ED4119712C /* Pods */,
+				7FDA2DFC967FDC2B66ACD0DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +350,20 @@
 		ADEAEA4A245541E600A0CB4B /* Attend */ = {
 			isa = PBXGroup;
 			children = (
-				ADEAEA4B245541E600A0CB4B /* AppDelegate.swift */,
-				ADEAEA4D245541E600A0CB4B /* SceneDelegate.swift */,
-				ADEAEA4F245541E600A0CB4B /* ContentView.swift */,
+				ADCCA9BE245806D1005D07AA /* Repositories */,
+				ADCCA9AA24574C7C005D07AA /* Attend.entitlements */,
+				ADCCA9BA245753F4005D07AA /* EnvironmentWindowKey.swift */,
+				ADCCA9812456F0D1005D07AA /* Font */,
+				ADCCA9B12457526D005D07AA /* CredentialStorage */,
+				AD2B18B42455E1DB00E6E977 /* ViewModel */,
+				AD2B18AF2455CADE00E6E977 /* Model */,
+				AD2B18B22455CB7500E6E977 /* App */,
+				AD2B18B32455CB7B00E6E977 /* Views */,
 				ADEAEA51245541E800A0CB4B /* Assets.xcassets */,
+				ADCCA9AB24574DA3005D07AA /* GoogleService-Info.plist */,
 				ADEAEA56245541E800A0CB4B /* LaunchScreen.storyboard */,
 				ADEAEA59245541E800A0CB4B /* Info.plist */,
 				ADEAEA53245541E800A0CB4B /* Preview Content */,
-				ADEAEA5F24554B2800A0CB4B /* AddClassesView.swift */,
 			);
 			path = Attend;
 			sourceTree = "<group>";
@@ -85,9 +383,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADEAEA5C245541E800A0CB4B /* Build configuration list for PBXNativeTarget "Attend" */;
 			buildPhases = (
+				3439620F69349E51E83DC9B5 /* [CP] Check Pods Manifest.lock */,
 				ADEAEA44245541E600A0CB4B /* Sources */,
 				ADEAEA45245541E600A0CB4B /* Frameworks */,
 				ADEAEA46245541E600A0CB4B /* Resources */,
+				EF9B004D9D7097C843B7C2C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,7 +436,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCCA9C524581811005D07AA /* NanumGothic.ttf in Resources */,
+				ADCCA9C624581811005D07AA /* NanumGothicBold.ttf in Resources */,
+				ADCCA9C724581811005D07AA /* NanumGothicExtraBold.ttf in Resources */,
+				ADCCA9C824581811005D07AA /* NanumGothicLight.ttf in Resources */,
 				ADEAEA58245541E800A0CB4B /* LaunchScreen.storyboard in Resources */,
+				ADCCA9AC24574DA3005D07AA /* GoogleService-Info.plist in Resources */,
 				ADEAEA55245541E800A0CB4B /* Preview Assets.xcassets in Resources */,
 				ADEAEA52245541E800A0CB4B /* Assets.xcassets in Resources */,
 			);
@@ -144,15 +449,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3439620F69349E51E83DC9B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9B004D9D7097C843B7C2C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attend/Pods-Attend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attend/Pods-Attend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attend/Pods-Attend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADEAEA44245541E600A0CB4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCCA97A2456E843005D07AA /* AttendanceButton.swift in Sources */,
+				ADCCA9BB245753F4005D07AA /* EnvironmentWindowKey.swift in Sources */,
 				ADEAEA4C245541E600A0CB4B /* AppDelegate.swift in Sources */,
+				ADCCA99A2456F70C005D07AA /* ContentView.swift in Sources */,
+				ADCCA9A4245747EC005D07AA /* OUser.swift in Sources */,
+				ADCCA97C2456E8AA005D07AA /* TextButton.swift in Sources */,
+				ADCCA9C224580BD8005D07AA /* AppDelegate+.swift in Sources */,
+				ADCCA9B92457526D005D07AA /* SharedWebCredential.swift in Sources */,
+				ADCCA9B02457522C005D07AA /* SignInWithAppleDelegates.swift in Sources */,
+				ADCCA9A024574597005D07AA /* AddStudentView.swift in Sources */,
+				ADCCA9AE24575023005D07AA /* SignInWithApple.swift in Sources */,
 				ADEAEA6024554B2800A0CB4B /* AddClassesView.swift in Sources */,
 				ADEAEA4E245541E600A0CB4B /* SceneDelegate.swift in Sources */,
-				ADEAEA50245541E600A0CB4B /* ContentView.swift in Sources */,
+				ADCCA9CA2458191C005D07AA /* StudentRepository.swift in Sources */,
+				ADCCA9A9245749F5005D07AA /* AuthView.swift in Sources */,
+				ADCCA99E24573C38005D07AA /* StudentListView.swift in Sources */,
+				ADCCA9C0245806E5005D07AA /* ClassRepository.swift in Sources */,
+				AD2B18BC2455EA4200E6E977 /* ClassSummaryView.swift in Sources */,
+				AD2B18B62455E1EE00E6E977 /* ClassCellViewModel.swift in Sources */,
+				AD2B18C82455ED9F00E6E977 /* StudentListViewModel.swift in Sources */,
+				ADCCA9A72457499C005D07AA /* SignInView.swift in Sources */,
+				AD2B18C62455EBF500E6E977 /* Student.swift in Sources */,
+				AD2B18CA2455F3A900E6E977 /* StudentDetailView.swift in Sources */,
+				ADCCA9D9245862BE005D07AA /* StudentAttendanceView.swift in Sources */,
+				ADCCA9B62457526D005D07AA /* UserData.swift in Sources */,
+				ADCCA9CE245852C1005D07AA /* AttendenceRepository.swift in Sources */,
+				AD2B18C02455EAB300E6E977 /* ClassDetailViewModel.swift in Sources */,
+				ADCCA9A2245746B0005D07AA /* SessionStore.swift in Sources */,
+				ADCCA9B82457526D005D07AA /* Keychain.swift in Sources */,
+				AD2B18BA2455EA2C00E6E977 /* ClassDetailView.swift in Sources */,
+				AD2B18C42455EBDD00E6E977 /* StudentCellViewModel.swift in Sources */,
+				AD2B18BE2455EA7B00E6E977 /* ReminderView.swift in Sources */,
+				AD2B18B12455CAEA00E6E977 /* Class.swift in Sources */,
+				ADCCA9D324585651005D07AA /* AttendanceSummaryView.swift in Sources */,
+				AD2B18CC2455F3EF00E6E977 /* StudentDetailViewModel.swift in Sources */,
+				ADCCA9D1245855D7005D07AA /* AttendanceListView.swift in Sources */,
+				AD2B18B82455E3F700E6E977 /* ClassListViewModel.swift in Sources */,
+				ADCCA9D524585667005D07AA /* AttendanceListViewModel.swift in Sources */,
+				ADCCA9802456EC3C005D07AA /* UserSelection.swift in Sources */,
+				ADEAEA50245541E600A0CB4B /* ClassListView.swift in Sources */,
+				AD2B18C22455EBA300E6E977 /* StudentSummaryView.swift in Sources */,
+				ADCCA9B72457526D005D07AA /* UserDataKeychain.swift in Sources */,
+				ADCCA9CC24581DBC005D07AA /* Attendence.swift in Sources */,
+				ADCCA9BD245805A5005D07AA /* AuthenticationService.swift in Sources */,
+				ADCCA9D7245856BB005D07AA /* AttendanceCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,41 +674,47 @@
 		};
 		ADEAEA5D245541E800A0CB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6374AA66D066FE7EE1980F86 /* Pods-Attend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Attend/Attend.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Attend/Preview Content\"";
 				DEVELOPMENT_TEAM = 7QTY74PJCK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Attend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		ADEAEA5E245541E800A0CB4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2226416033E23ED1678AF9B9 /* Pods-Attend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Attend/Attend.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Attend/Preview Content\"";
 				DEVELOPMENT_TEAM = 7QTY74PJCK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Attend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ourspaceapp.Attends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
